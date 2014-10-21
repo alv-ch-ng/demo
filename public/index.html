@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html ng-controller="PublicMainCtrl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>&lt;+alv-ch-ng /&gt;</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+    <!--/.webfontloader -->
+    <script src="lib/components-webfontloader/webfont.js" type="text/javascript" async=""></script>
+    <script>
+        WebFontConfig = {
+            custom: {
+                families: ['Frutiger Neue Bold', 'Frutiger Neue Italic','Frutiger Neue Light','Frutiger Neue','Admin Icons'],
+                urls: ['css/frutiger.css','css/admin-icons.css']
+            },
+            google: { families: [ 'Open+Sans:400italic,700italic,400,700:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!--/.alv-ch-ng.bootstrap -->
+    <link rel="stylesheet" type="text/css" href="lib/alv-ch-ng/css/alv-ch-bootstrap.min.css"/>
+    <!--/.css - essentials -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-select/css/bootstrap-select.min.css"/>
+
+    <!--/.dev - essentials -->
+    <link rel="stylesheet" type="text/css" href="lib/ng-dev/css/ng-dev.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/ng-dev/css/github.min.css"/>
+
+    <script data-main="js/main-public.js" src="lib/requirejs/require.js"></script>
+</head>
+<body>
+<!--
+<div class="bg bundeshaus" data-stellar-background-ratio="0.5"></div>
+-->
+<div class="navbar navbar-inverse" role="navigation" id="navbar" scroll-fix>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#global-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand alv">
+                <a href="/"><img src="images/ch.png"/> alv-ch-ng</a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="global-navigation">
+            <ul class="nav navbar-nav">
+                <li class="active" active-startswith="/systems">
+                    <a href="#/gettingStarted" class="pointer" i18n-msg="common.systems"></a>
+                </li>
+                <li active-startswith="/messages">
+                    <a href="#/less" class="pointer" i18n-msg="common.messages"></a>
+                </li>
+                <li active-startswith="/templates">
+                    <a href="#/components" class="pointer" i18n-msg="common.templates"></a>
+                </li>
+            </ul>
+            <!--<div id="languages">
+                <i18n-switcher/>
+            </div>-->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <i18n-switcher></i18n-switcher>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--/.navbar -->
+
+<div class="system-messages">
+    <message message-severity="info" message-dismissable="true">
+        <span>
+            <strong>alv-ch-ng</strong> uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies" target="_blank">Find out more about cookies</a>
+        </span>
+    </message>
+    <message message-severity="info" message-dismissable="true" message-dismissable-text="No thanks">
+        <span>
+            <strong>Tell us what you think of alv-ch-ng</strong><br/>
+            <a class="pointer" data-toggle="modal" data-target="#survey">Take the 3 minutes survey</a>. This will open a short survey.
+        </span>
+    </message>
+
+    <modal modal-title="Help us improve Job-Room" modal-id="survey" modal-form="/#/job/search" modal-submit="Submit">
+        <p>Please don't include any personal or financial information, for example your National Insurance or credit
+            card numbers.</p>
+        <input type="text" form-input="commonReportAProblemLabel1" id="exampleInputEmail2"/>
+        <input type="text" form-input="commonReportAProblemLabel2" id="exampleInputPassword2"/>
+    </modal>
+</div>
+<!--/.system messages -->
+
+<div class="container">
+
+    <div id="alv-divider" scroll-fix="navbar">
+        <div class="release-note poc">
+            <a release-note ng-bind="applicationReleaseNote"></a>
+            <p ng-bind="applicationVersion"></p>
+        </div>
+        <!--/. umgebungen / alpha / beta -->
+    </div>
+
+    <ng-view></ng-view>
+
+</div>
+<!--./container -->
+
+<div id="footer-container">
+    <hr id="footer" scroll-fix scroll-fix-bottom="footer-content" />
+    <div id="footer-content" class="footer">
+        <div class="container">
+            <div class="row footer-sitemap">
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#/">Startseite</a></li>
+                        <li><a href="#/login">Login, what else?</a></li>
+                        <li><a href="#/jobroom">Job-Room</a></li>
+                        <li><a href="#/job/search">Job suchen</a></li>
+                        <li><a href="#/job/result">Trefferliste</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#/">Startseite</a></li>
+                        <li><a href="#/login">Login, what else?</a></li>
+                        <li><a href="#/jobroom">Job-Room</a></li>
+                        <li><a href="#/job/search">Job suchen</a></li>
+                        <li><a href="#/job/result">Trefferliste</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#/">Startseite</a></li>
+                        <li><a href="#/login">Login, what else?</a></li>
+                        <li><a href="#/jobroom">Job-Room</a></li>
+                        <li><a href="#/job/search">Job suchen</a></li>
+                        <li><a href="#/job/result">Trefferliste</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-services">
+                <div class="col-md-8">
+
+                    <span class="cd-bund hidden-xs">
+                        <img src="images/logo_ch.png" />
+                        <h1>State Secretariat for Economic Affairs SECO<br />ALV / ALK</h1>
+                    </span>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#/help">Help</a></li>
+                        <li><a href="#/cookies">Cookies</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-copyright">
+                <div class="col-md-12">
+                    &copy; Informatik der ALV / ALK
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.footer -->
+
+</body>
+</html>

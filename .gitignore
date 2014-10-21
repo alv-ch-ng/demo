@@ -1,0 +1,14 @@
+bower_components/**/*
+bower_components/*
+node_modules/**/*
+node_modules/*
+public/lib/**/*
+public/lib/*
+public/fonts/**/*
+public/fonts/*
+public/template/**/*
+public/template/*
+.idea/**/*
+.idea/*
+**/node_modules/**/*
+*.iml

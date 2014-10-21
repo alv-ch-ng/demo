@@ -1,0 +1,122 @@
+<div class="page-header">
+    <h1>LESS <small>do less css.</small></h1>
+
+    <h2>Compiling alv-ch-ng</h2>
+    alv-ch-ng can be used in at least two ways: with the compiled CSS or with the source Less files. To compile the Less files, visit <a href="http://www.lesscss.org">the official Less website</a> to run the necessary commands.
+
+    <h3>Run alv-ch-ng with the Less files</h3>
+    <div class="highlight">
+<pre><code class="hljs">
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet/less"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/src/less/alv.less"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span>&gt;</span><span class="javascript">
+            less = {
+                env: <span class="hljs-string">"development"</span>,
+                async: <span class="hljs-literal">false</span>,
+                fileAsync: <span class="hljs-literal">false</span>,
+                poll: <span class="hljs-number">1000</span>,
+                functions: {},
+                dumpLineNumbers: <span class="hljs-string">"comments"</span>,
+                relativeUrls: <span class="hljs-literal">false</span>,
+                rootpath: <span class="hljs-string">":/a.com/"</span>
+            };
+        </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/lib/less/dist/less-1.7.0.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+    </div>
+    For more information, please visit <a href="http://lesscss.org/#client-side-usage">the official Less websites section: Client-side usage</a>.
+
+    <h2>Typography</h2>
+
+    <h3>Built with Less</h3>
+    The typographic scale is based on two Less variables in variables.less: @font-size-base and @line-height-base. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.
+    ((typo based on bootstrap...)) <a href="http://getbootstrap.com/css/#type" target="_blank">For more Informations see the Bootstrap documentation</a>.
+
+    <h3>Primary Font: Neue Frutiger</h3>
+    <p class="danger-notice">copyright etc...</p>
+    <div class="example">
+        <span>Neue Frutiger</span> <strong>Neue Frutiger Bold</strong> <i>Neue Frutiger Italic</i><p />
+        <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+        <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+        <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+        <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+        <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+        <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+    </div>
+    <div highlight class="highlight">
+WebFontConfig = {
+    custom: {
+        families: ['Frutiger Neue W02 Bd',
+                   'Frutiger Neue W02 It',
+                   'Frutiger Neue W02 Light',
+                   'FrutigerNeueW02-Regular'],
+        urls: ['/demo/css/frutiger.css']
+    }
+};
+    </div>
+
+    <h3>Secondary Font: Open Sans</h3>
+    ((text)) <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">See Google Fonts Page for more Details</a>.
+    <div class="example open-sans">
+        <span>Open Sans</span> <strong>Open Sans Bold</strong> <i>Open Sans Italic</i><p />
+        <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+        <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+        <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+        <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+        <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+        <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+    </div>
+    <div highlight class="highlight">
+WebFontConfig = {
+    google: { families: ['Open+Sans:400italic,700italic,400,700:latin'] }
+};
+(function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+})();
+    </div>
+
+    <h2>Variables</h2>
+
+    <h3>Colour palette</h3>
+
+    ((pantone mässig: websafecolors.info))
+
+    <div class="example">
+        <img ph-img="60x60" ph-img-fill="11335a" ph-img-text="ffffff" class="img-polaroid" />
+        <img ph-img="60x60" ph-img-fill="1c5494" ph-img-text="ffffff" class="img-polaroid" />
+        <img ph-img="60x60" ph-img-fill="9fcce2" ph-img-text="000000" class="img-polaroid" />
+        <img ph-img="60x60" ph-img-fill="eaf0f5" ph-img-text="000000" class="img-polaroid" />
+        <img ph-img="60x60" ph-img-fill="f6f9fb" ph-img-text="000000" class="img-polaroid" />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img ph-img="60x60" ph-img-fill="E11A27" ph-img-text="ffffff" class="img-polaroid" />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img ph-img="60x60" ph-img-fill="E11A27" ph-img-text="ffffff" class="img-polaroid" />
+        <img ph-img="60x60" ph-img-fill="FF7F00" ph-img-text="ffffff" class="img-polaroid" />
+        <img ph-img="60x60" ph-img-fill="008B45" ph-img-text="ffffff" class="img-polaroid" />
+        <img ph-img="60x60" ph-img-fill="FFD700" ph-img-text="000000" class="img-polaroid" />
+    </div>
+    <div highlight class="highlight">
+        @jr-blue-darker:    darker(@jr-blue-dark, 13.5%); //#11335a
+        @jr-blue-dark:      #1c5494;
+        @jr-blue:           #9fcce2;
+        @jr-blue-light:     #eaf0f5;
+        @jr-blue-lighter:   lighten(@jr-blue-light, 3.5%); //#f6f9fb
+
+        @ch-red:       #E11A27; // offical cd-bund red
+
+        @alv-alpha:		@ch-red;
+        @alv-beta:		#FF7F00;
+        @alv-rc:		#008B45;
+        @alv-poc:		#FFD700;
+    </div>
+
+</div>

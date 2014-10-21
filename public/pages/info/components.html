@@ -1,0 +1,413 @@
+<div id="scroll-container">
+    <div class="page-header">
+        <h1>Components
+            <small>Reusable components built to ease the pain of not knowing the right stylesheets.</small>
+        </h1>
+    </div>
+
+    <h2 id="grid">Grid</h2>
+    <div highlight="this" grid="show-grid">
+        <div column="2">.col-md-2</div>
+        <div column="2">.col-md-2</div>
+        <div column="2">.col-md-2</div>
+        <div column="2">.col-md-2</div>
+        <div column="2">.col-md-2</div>
+        <div column="2">.col-md-2</div>
+
+        <div column="4">.col-md-4</div>
+        <div column="2">.col-md-2</div>
+        <div column="2">.col-md-2</div>
+        <div column="4">.col-md-4</div>
+
+        <div column="4">.col-md-4</div>
+        <div column="4" column-offset="4">.col-md-4 .col-md-offset-4</div>
+
+        <div column="3" column-offset="3">.col-md-3 .col-md-offset-3</div>
+        <div column="3" column-offset="3">.col-md-3 .col-md-offset-3</div>
+
+        <div column="6" column-offset="3" column-last="true">.col-md-6 .col-md-offset-3</div>
+
+        <div column="9" column-push="3">.col-md-9 .col-md-push-3</div>
+        <div column="3" column-pull="9">.col-md-3 .col-md-pull-9</div>
+    </div>
+
+    <h2 id="glyphicons">Glyphicons</h2>
+    <div highlight="this">
+        <glyph icon="star"/>
+
+        <button>
+            <glyph icon="star"/>
+            Star
+        </button>
+
+        <button glyph-icon="search" glyph-align="right">
+            Search
+        </button>
+    </div>
+
+    <h2 id="dropdowns">Dropdowns</h2>
+    <div highlight="this" highlight-model="searchCriteria">
+        <form role="form">
+
+            <select form-select nya-selectpicker form-label="testLabel"  id="testSelect101" ng-model="searchCriteria.checkboxTest1"
+                    ng-options="label for label in demoArray"></select>
+
+        </form>
+
+        <form class="form-horizontal" role="form">
+
+            <select form-select nya-selectpicker form-label="testLabel"  id="testSelect102" ng-model="searchCriteria.checkboxTest1"
+                    ng-options="label for label in demoArray"></select>
+
+        </form>
+
+        <form class="form-inline" role="form">
+
+            <select form-select nya-selectpicker form-label="testLabel"  id="testSelect103" ng-model="searchCriteria.checkboxTest1"
+                    ng-options="label for label in demoArray"></select>
+
+        </form>
+    </div>
+
+    <h2 id="form">Forms</h2>
+    ((forms...))
+    <h3 id="basic_form">Basic Form</h3>
+    <div highlight="this" highlight-model="searchCriteria">
+        <form role="form">
+            <input type="text" form-input form-label="testLabel"
+                   form-helptext="testHelptext" name="testInput" id="testInput1" ng-model="searchCriteria.inputTest1"
+                   i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+            <textarea form-textarea form-label="testLabel"
+                      form-helptext="testHelptext" form-textarea-large="true"></textarea>
+
+            <h3>iCheck</h3>
+
+            <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox10"
+                   ng-model="searchCriteria.checkboxTest10"/>
+
+            <input type="radio"form-label="testLabel" name="textRadio1" id="textRadio1_10"
+                   ng-model="searchCriteria.radioTest10"/>
+            <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio1_20"
+                   ng-model="searchCriteria.radioTest10"/>
+        </form>
+    </div>
+
+    <h3 id="horizontal_form">Horizontal Form</h3>
+    <div highlight="this" highlight-model="searchCriteria">
+        <form class="form-horizontal" role="form">
+            <input type="text" form-input form-label="testLabel" name="testInput" id="testInput2" ng-model="searchCriteria.inputTest1"
+                   i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+            <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
+
+            <h3>iCheck</h3>
+
+            <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox2"
+                   ng-model="searchCriteria.checkboxTest10"/>
+
+            <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_10"
+                   ng-model="searchCriteria.radioTest10"/>
+            <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_20"
+                   ng-model="searchCriteria.radioTest10"/>
+        </form>
+    </div>
+
+    <h3 id="inline_form">Inline Form</h3>
+    <div highlight="this" highlight-model="searchCriteria">
+        <form class="form-inline" role="form">
+            <input type="text" form-input form-label="testLabel" name="testInput" id="testInput3" ng-model="searchCriteria.inputTest1"
+                   i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+            <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
+
+            <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox3"
+                   ng-model="searchCriteria.checkboxTest10"/>
+
+            <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_10"
+                   ng-model="searchCriteria.radioTest10"/>
+            <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_20"
+                   ng-model="searchCriteria.radioTest10"/>
+        </form>
+
+    </div>
+
+    <h3 id="autocompleter">Autocompleter / Input Tag / Input Dropdown</h3>
+    <div highlight="this" highlight-model="tags">
+
+        <input type="text"
+               form-input
+               form-label="testLabel"
+               typeahead="city as city.text for city in cities | filter:{text:$viewValue}"
+               typeahead-append-to-body="true"
+               i18n-attribute="placeholder"
+               i18n-value="testAutoCompletePlaceholder"
+               ng-model="selected" />
+
+        <input type="text"
+               form-tag="testLabel"
+               form-target-model="tags"
+               form-label="testLabel"
+               typeahead="city as city.text for city in cities | filter:{text:$viewValue}"
+               typeahead-on-select="addToTargetModel($item)"
+               typeahead-append-to-body="true"
+               i18n-attribute="placeholder"
+               i18n-value="testAutoCompletePlaceholder"
+               ng-model="selected" />
+
+        <div type="text"
+               form-tag="testLabel"
+               form-target-model="tags"
+               form-label="testLabel"
+               form-append-dropdown="berufsgruppen"
+               form-append-dropdown-title="Berufsgruppen"
+               i18n-attribute="placeholder"
+               i18n-value="testAutoCompletePlaceholder"
+               ng-model="selected"></div>
+
+        <input type="text"
+               form-tag="testLabel"
+               form-target-model="tags"
+               form-label="testLabel"
+               form-helptext="testHelptext"
+               form-append-dropdown="berufsgruppen"
+               form-append-dropdown-title="Berufsgruppen"
+               typeahead="city as city.text for city in cities | filter:{text:$viewValue}"
+               typeahead-on-select="addToTargetModel($item)"
+               typeahead-append-to-body="true"
+               i18n-attribute="placeholder"
+               i18n-value="testAutoCompletePlaceholder"
+               ng-model="selected" />
+
+    </div>
+
+    <h3 id="placeholder">Better Label/Placeholders</h3>
+    <div highlight="this">
+
+        <input type="text" form-input form-placeholder="testLabel" form-placeholder-type="label" id="test1"
+               ng-model="searchCriteria.placeholder1"/>
+
+        <input type="text" form-input form-placeholder="testLabel" form-placeholder-type="inside" id="test2"
+               ng-model="searchCriteria.placeholder2"/>
+
+        <input type="text" form-input form-placeholder="testLabel" form-placeholder-type="outline" id="test3"
+               ng-model="searchCriteria.placeholder3"/>
+
+    </div>
+
+    <h2 id="input_groups">Input groups</h2>
+    <div highlight="this">
+
+        <input type="text" form-input form-label="testLabel" form-prepend="CHF" id="test102" ng-model="searchCriteria.placeholder100" />
+
+        <input type="text" form-input form-label="testLabel" form-append=".00" id="test101" ng-model="searchCriteria.placeholder100"  />
+
+        <input type="text" form-input form-label="testLabel" form-prepend="CHF" form-append=".00" id="test100" ng-model="searchCriteria.placeholder100" />
+
+        <input type="text" form-input form-label="testLabel" form-prepend="euro" form-prepend-icon="true" id="test103" ng-model="searchCriteria.placeholder100" />
+
+        <input type="text" form-input form-label="testLabel" form-append="euro" form-append-icon="true" id="test104" ng-model="searchCriteria.placeholder100"  />
+
+        <hr />
+
+        <input type="text" form-input form-label="testLabel" form-append="test-btn" form-append-btn="doSomething()" id="test105" ng-model="searchCriteria.placeholder100"  />
+
+        <input type="text" form-input form-label="testLabel" form-prepend="test-btn2" form-prepend-btn="doSomething()" id="test106" ng-model="searchCriteria.placeholder100"  />
+
+        <input type="text" form-input form-label="testLabel" form-prepend="test-btn3" form-prepend-btn="doSomething()" form-append="test-btn4" form-append-btn="doSomething()" id="test107" ng-model="searchCriteria.placeholder100"  />
+
+    </div>
+
+    <h2 id="buttons">Buttons and Modals</h2>
+    <div highlight="this">
+        <button class="btn-primary">
+            Primary Button
+        </button>
+
+        <button data-toggle="modal" data-target="#modalId">
+            Launch demo modal
+        </button>
+
+        <modal modal-title="TEST" modal-id="modalId" modal-form="/#/job/search" modal-submit="Submit">
+            <p>Please don't include any personal or financial information, for example your National Insurance or credit
+                card numbers.</p>
+            <input type="text" form-input="What you were doing" id="exampleInputEmail2"/>
+            <input type="text" form-input="What went wrong" id="exampleInputPassword2"/>
+        </modal>
+    </div>
+
+    <h2 id="markers">Markers aka Labels</h2>
+    <div highlight="this">
+        <h3>Example heading
+            <marker>New</marker>
+        </h3>
+        <h3 marker="old">Example heading</h3>
+
+        <marker>Default</marker>
+        <marker marker-severity="primary">Primary</marker>
+        <marker marker-severity="success">Success</marker>
+        <marker marker-severity="info">Info</marker>
+        <marker marker-severity="warning">Warning</marker>
+        <marker marker-severity="danger">Danger</marker>
+    </div>
+
+    <h2 id="badges">Badges</h2>
+    <div highlight="this">
+        <a href="#">Inbox
+            <badge>42</badge>
+        </a>
+
+        <p/>
+
+        <a href="#" badge="21">Outbox</a>
+
+        <p/>
+
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active">
+                <a href="#">
+                    <badge badge-align="right">42</badge>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" badge-align="right" badge="42">
+                    Start
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <h2 id="tooltip">Tooltip</h2>
+    tbd
+
+    <h2 id="alerts">Alerts</h2>
+    <div highlight="this">
+        <message severity="info" dismissable="true" ng-transclude>
+                <span>
+                    <strong>Anzahl gefundene Jobs: 39.267</strong> Die Anzahl der Resultate ist auf 300 beschränkt. Bitte wählen Sie zusätzliche Suchkriterien, um die Anzahl der Resultate einzuschränken. <a
+                        class="pointer" data-toggle="collapse" data-target="#search">Did you expect other results?</a>
+                    <div id="search" class="collapse">
+                        <h2>Help us improve ---</h2>
+
+                        <p>Please don't include any personal or financial information, for example your National Insurance
+                            or credit card numbers.</p>
+
+                        <form role="form" action="#">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">What were you expecting</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">What were you searching for</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </span>
+        </message>
+    </div>
+
+    <h2 id="notices">Notices</h2>
+    <div highlight="this">
+        <p class="application-notice" ph-txt="2s"></p>
+
+        <p class="primary-notice" ph-txt="2s"></p>
+
+        <p class="success-notice" ph-txt="2s"></p>
+
+        <p class="info-notice" ph-txt="2s"></p>
+
+        <p class="warning-notice" ph-txt="2s"></p>
+
+        <p class="danger-notice" ph-txt="2s"></p>
+    </div>
+
+    <h2 id="scrollspyfix">ScrollFix & ScrollSpy</h2>
+    <h3>ScrollFix</h3>
+    <div highlight>
+        tbd
+    </div>
+
+    <h3>ScrollSpy</h3>
+    <div highlight>
+        tbd
+    </div>
+
+    <h2 id="upload">File Upload</h2>
+    <!-- The file upload form used as target for the file upload widget -->
+    <form id="fileupload" action="/demo/server/php/" method="POST" enctype="multipart/form-data" data-ng-controller="DemoFileUploadController" data-file-upload="options" data-ng-class="{'fileupload-processing': processing() || loadingFiles}">
+        <!-- Redirect browsers with JavaScript disabled to the origin page -->
+        <noscript><input type="hidden" name="redirect" value="/demo/"></noscript>
+        <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+        <div class="row fileupload-buttonbar">
+            <div class="col-lg-7">
+                <!-- The fileinput-button span is used to style the file input field as button -->
+            <span class="btn btn-success fileinput-button" ng-class="{disabled: disabled}">
+                <i class="glyphicon glyphicon-plus"></i>
+                <span>Add files...</span>
+                <input type="file" name="files[]" multiple ng-disabled="disabled">
+            </span>
+
+                <button type="button" class="btn btn-primary start" data-ng-click="submit()">
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Start upload</span>
+                </button>
+
+                <button type="button" class="btn btn-warning cancel" data-ng-click="cancel()">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel upload</span>
+                </button>
+                <!-- The global file processing state -->
+                <span class="fileupload-process"></span>
+            </div>
+            <!-- The global progress state -->
+            <div class="col-lg-5 fade" data-ng-class="{in: active()}">
+                <!-- The global progress bar -->
+                <div class="progress progress-striped active" data-file-upload-progress="progress()"><div class="progress-bar progress-bar-success" data-ng-style="{width: num + '%'}"></div></div>
+                <!-- The extended global progress state -->
+                <div class="progress-extended">&nbsp;</div>
+            </div>
+        </div>
+        <!-- The table listing the files available for upload/download -->
+        <table class="table table-striped files ng-cloak">
+            <tr data-ng-repeat="file in queue" data-ng-class="{'processing': file.$processing()}">
+                <td data-ng-switch data-on="!!file.thumbnailUrl">
+                    <div class="preview" data-ng-switch-when="true">
+                        <a data-ng-href="{{file.url}}" title="{{file.name}}" download="{{file.name}}" data-gallery><img data-ng-src="{{file.thumbnailUrl}}" alt=""></a>
+                    </div>
+                    <div class="preview" data-ng-switch-default data-file-upload-preview="file"></div>
+                </td>
+                <td>
+                    <p class="name" data-ng-switch data-on="!!file.url">
+                        <span data-ng-switch-when="true" data-ng-switch data-on="!!file.thumbnailUrl">
+                            <a data-ng-switch-when="true" data-ng-href="{{file.url}}" title="{{file.name}}" download="{{file.name}}" data-gallery>{{file.name}}</a>
+                            <a data-ng-switch-default data-ng-href="{{file.url}}" title="{{file.name}}" download="{{file.name}}">{{file.name}}</a>
+                        </span>
+                        <span data-ng-switch-default>{{file.name}}</span>
+                    </p>
+                    <strong data-ng-show="file.error" class="error text-danger">{{file.error}}</strong>
+                </td>
+                <td>
+                    <p class="size">{{file.size | formatFileSize}}</p>
+                    <div class="progress progress-striped active fade" data-ng-class="{pending: 'in'}[file.$state()]" data-file-upload-progress="file.$progress()"><div class="progress-bar progress-bar-success" data-ng-style="{width: num + '%'}"></div></div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary start" data-ng-click="file.$submit()" data-ng-hide="!file.$submit || options.autoUpload" data-ng-disabled="file.$state() == 'pending' || file.$state() == 'rejected'">
+                        <i class="glyphicon glyphicon-upload"></i>
+                        <span>Start</span>
+                    </button>
+                    <button type="button" class="btn btn-warning cancel" data-ng-click="file.$cancel()" data-ng-hide="!file.$cancel">
+                        <i class="glyphicon glyphicon-ban-circle"></i>
+                        <span>Cancel</span>
+                    </button>
+                    <button data-ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy" data-ng-click="file.$destroy()" data-ng-hide="!file.$destroy">
+                        <i class="glyphicon glyphicon-trash"></i>
+                        <span>Delete</span>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

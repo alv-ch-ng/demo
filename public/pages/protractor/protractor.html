@@ -1,0 +1,27 @@
+<grid>
+    <div column="10">
+        <h1>Protractor Test</h1>
+
+        <h1>Hello {{yourName}}!</h1>
+
+        <input type="text"
+               form-input
+               ng-model="yourName" />
+
+        <h2>Autocompleter and Form-Tag</h2>
+
+        <input type="text"
+               form-tag="testLabel"
+               form-target-model="tags"
+               form-append-dropdown="berufsgruppen"
+               form-append-dropdown-title="Berufsgruppen"
+               typeahead="city as city.text for city in cities | filter:{text:$viewValue}"
+               typeahead-on-select="addToTargetModel($item)"
+               typeahead-append-to-body="true"
+               i18n-attribute="placeholder"
+               i18n-value="testAutoCompletePlaceholder"
+               ng-model="formTag"
+               id="form-tag" />
+    </div>
+    <div column="2" page-navigation></div>
+</grid>

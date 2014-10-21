@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Admin Icons';
+  src: url('/fonts/AdminCHSymbols/AdminCH_Symbols.eot');
+  src: url('/fonts/AdminCHSymbols/AdminCH_Symbols?#iefix') format('embedded-opentype'), url('/fonts/AdminCHSymbols/AdminCH_Symbols.woff') format('woff'), url('/fonts/AdminCHSymbols/AdminCH_Symbols.ttf') format('truetype'), url('/fonts/AdminCHSymbols/AdminCH_Symbols.svg#icomoon') format('svg');
+}

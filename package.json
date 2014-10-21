@@ -1,0 +1,50 @@
+{
+  "name": "alv-ch-ng.demo",
+  "version": "0.0.1",
+  "description": "alv-ch-ng demo.",
+  "author": "ALV-CH",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tdascoli/alv-ch-ng.demo"
+  },
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.0.0"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose",
+    "start": "node ./bin/www",
+    "postinstall": "export HOME=$HOME/app-root/runtime/repo; ./node_modules/bower/bin/bower install; grunt deps"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "method-override": "*",
+    "mongodb": "*"
+  },
+  "devDependencies": {
+    "bower": "*",
+    "chromedriver": "^2.10.0-1",
+    "colors": "*",
+    "express": "^4.9.0",
+    "grunt": "*",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jasmine": "^0.7.0",
+    "grunt-template-jasmine-istanbul": "0.3.1",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-protractor-runner": "^1.1.4",
+    "grunt-protractor-webdriver": "^0.1.8",
+    "grunt-coveralls": "*",
+    "grunt-sync": "*",
+    "jshint": "*",
+    "protractor": "^1.1.1",
+    "travis": "*"
+  },
+  "bundleDependencies": [],
+  "private": true,
+  "main": "server.js"
+}
