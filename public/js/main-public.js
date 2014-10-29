@@ -24,12 +24,13 @@ require.config({
         'ngload':                       'lib/angular-amd/ngload.min',
         'nya-bootstrap-select':         'lib/nya-bootstrap-select/nya-bootstrap-select',
         'ng-dev':                       'lib/ng-dev/ng-dev',
+        'highlightjs':                  'lib/highlightjs/highlight.pack',
         'alv-ch-ng.common':             'lib/alv-ch-ng/alv-ch-ng.common.min',
         'alv-ch-ng.i18n':               'lib/alv-ch-ng/alv-ch-ng.i18n',
         'alv-ch-ng.ui-core':            'lib/alv-ch-ng/alv-ch-ng.ui-core',
         'alv-ch-ng.ui-forms':           'lib/alv-ch-ng/alv-ch-ng.ui-forms',
-        'demo-common.i18n':         'js/modules/demo-common.i18n',
-        'demo-common.constants':    'js/modules/demo-common.constants',
+        'demo-common.i18n':             'js/modules/demo-common.i18n',
+        'demo-common.constants':        'js/modules/demo-common.constants',
         'app':                          'js/application/application-public'
     },
 
@@ -75,6 +76,9 @@ require.config({
                                         'angular',
                                         'jQuery'
                                     ],
+        'highlightjs':              [
+                                        'jQuery'
+                                    ],
         'nya-bootstrap-select':     [
                                         'angular',
                                         'bootstrap',
@@ -93,7 +97,8 @@ require.config({
                                         'nya-bootstrap-select',
                                         'demo-common.i18n',
                                         'demo-common.constants',
-                                        'ng-dev'
+                                        'ng-dev',
+                                        'highlightjs'
                                     ]
     },
 

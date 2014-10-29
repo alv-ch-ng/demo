@@ -4,3 +4,12 @@ node_js:
 before_install: npm install -g bower grunt-cli
 install: npm install
 before_script: bower install
+deploy:
+  provider: openshift
+  user: thomas@dasco.li
+  password:
+    secure: Zzev8zyeYcmB6fe/Z0U2HYxJUHR6vVkRRJotvkm3lDyglgLMjzE4582lSMCY5rWS2xyYHIpJTjysO4IfRW6DaeAIKUV4Ty9Y8xxaeG11urCRZlVIyEtIrNRvcdx4b0mQfm6R3f9CKhZYuHyL+W+Lm/y0S52fKI+64+YU6VxxJdI=
+  app: ngdemo
+  domain: dascoli
+  on:
+    repo: tdascoli/alv-ch-ng.demo

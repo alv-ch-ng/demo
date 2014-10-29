@@ -350,6 +350,13 @@ define(['angularAMD'], function (angularAMD) {
         })
     });
 
+    app.config(function (hljsServiceProvider) {
+        hljsServiceProvider.setOptions({
+            // replace tab with 4 spaces
+            tabReplace: '    '
+        });
+    });
+
     app.config(function ($routeProvider,$httpProvider) {
         /** Enable cross domain communication **/
         $httpProvider.defaults.headers.useXDomain=true;

@@ -258,6 +258,16 @@
                     }],
                     verbose: true
                 },
+                highlightJs: {
+                    files: [{
+                        cwd: 'components/highlightjs',
+                        src: [
+                            '**'
+                        ],
+                        dest: 'public/lib/highlightjs'
+                    }],
+                    verbose: true
+                },
                 requirejs: {
                     files: [{
                         cwd: 'components/requirejs',

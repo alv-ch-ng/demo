@@ -21,14 +21,15 @@
         "angular-route": "latest",
         "angular-cookies": "latest",
         "angular-sanitize": "latest",
-        "alv-ch-ng":"0.0.12-poc",
-        "iCheck": "latest",
+        "alv-ch-ng":"0.0.14-poc",
         "jasmine": "latest",
         "jquery-ui": "latest",
         "angularAMD":"latest",
         "ng-placeholders": "0.0.3-SNAPSHOT",
         "angular-bootstrap": "latest",
-        "angular-mocks": "latest"
+        "angular-mocks": "latest",
+        "ng-dev": "latest",
+        "highlightjs":"latest"
     },
     "resolutions": {
         "jquery": "~2.1.1",
