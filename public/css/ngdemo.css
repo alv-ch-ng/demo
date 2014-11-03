@@ -1,0 +1,39 @@
+.welcome {
+    text-align: center;
+}
+
+.welcome-logo {
+    height: 144px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.third-logos {
+    vertical-align: middle;
+}
+
+/** bootstrap logo */
+.bs-docs-booticon {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+margin: 0 auto 30px;
+}
+.bs-docs-booticon-outline {
+background-color: transparent;
+border: 1px solid #cdbfe3;
+}
+.bs-docs-booticon-lg {
+width: 144px;
+height: 144px;
+font-size: 108px;
+line-height: 140px;
+}
+.bs-docs-booticon {
+display: block;
+font-weight: 500;
+color: #fff;
+text-align: center;
+cursor: default;
+background-color: #563d7c;
+border-radius: 15%;
+}
