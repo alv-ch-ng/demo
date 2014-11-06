@@ -343,7 +343,7 @@
         grunt.registerTask('deps', ['clean', 'sync']);
 
         // CI
-        grunt.registerTask('travis', ['clean', 'sync', ,'jasmine', 'coveralls']);
+        grunt.registerTask('travis', ['clean', 'sync', 'jasmine', 'coveralls']);
 
 
         // Default task.
