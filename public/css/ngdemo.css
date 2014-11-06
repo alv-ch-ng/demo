@@ -1,5 +1,10 @@
-.welcome {
+.welcome,
+.c404{
     text-align: center;
+}
+
+.c404 img {
+    padding: 2em 0;
 }
 
 .welcome-logo {
