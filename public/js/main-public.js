@@ -22,7 +22,6 @@ require.config({
         'jQuery.properties':            'lib/jquery/jquery.i18n.properties',
         'jQuery.ui.widget':             'lib/jquery-ui/ui/widget',
         'ngload':                       'lib/angular-amd/ngload.min',
-        'nya-bootstrap-select':         'lib/nya-bootstrap-select/nya-bootstrap-select',
         'ng-dev':                       'lib/ng-dev/ng-dev',
         'highlightjs':                  'lib/highlightjs/highlight.pack',
         'alv-ch-ng.common':             'lib/alv-ch-ng/alv-ch-ng.common.min',
@@ -59,8 +58,7 @@ require.config({
                                         'angular',
                                         'angular-ui-tooltip',
                                         'angular-ui-typeahead',
-                                        'jQuery.ui.widget',
-                                        'nya-bootstrap-select'
+                                        'jQuery.ui.widget'
                                     ],
         'alv-ch-ng.i18n':           [
                                         'angular',
@@ -79,12 +77,6 @@ require.config({
         'highlightjs':              [
                                         'jQuery'
                                     ],
-        'nya-bootstrap-select':     [
-                                        'angular',
-                                        'bootstrap',
-                                        'bootstrap-select',
-                                        'jQuery'
-                                    ],
         'app':                      [
                                         'angularAMD',
                                         'angular-cookies',
@@ -94,7 +86,6 @@ require.config({
                                         'alv-ch-ng.i18n',
                                         'alv-ch-ng.ui-core',
                                         'alv-ch-ng.ui-forms',
-                                        'nya-bootstrap-select',
                                         'demo-common.i18n',
                                         'demo-common.constants',
                                         'ng-dev',

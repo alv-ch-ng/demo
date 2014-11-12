@@ -248,16 +248,6 @@
                     }],
                     verbose: true
                 },
-                nyaBootstrapSelect: {
-                    files: [{
-                        cwd: 'components/nya-bootstrap-select/src',
-                        src: [
-                            '**'
-                        ],
-                        dest: 'public/lib/nya-bootstrap-select'
-                    }],
-                    verbose: true
-                },
                 highlightJs: {
                     files: [{
                         cwd: 'components/highlightjs',
