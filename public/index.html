@@ -12,8 +12,7 @@
     <script>
         WebFontConfig = {
             custom: {
-                families: ['Frutiger Neue Bold', 'Frutiger Neue Italic','Frutiger Neue Light','Frutiger Neue','Admin Icons'],
-                urls: ['css/frutiger.css','css/admin-icons.css']
+                families: ['Frutiger Neue','Frutiger Neue Light','Admin Icons']
             },
             google: { families: [ 'Open+Sans:400italic,700italic,400,700:latin' ] }
         };
@@ -27,11 +26,12 @@
             s.parentNode.insertBefore(wf, s);
         })();
     </script>
+    <!-- IE -->
+    <link rel="stylesheet" type="text/css" href="lib/alv-ch-ng/css/frutiger.min.css" media="screen, projection"/>
+    <link rel="stylesheet" type="text/css" href="lib/alv-ch-ng/css/admin-icons.min.css" media="screen, projection"/>
 
     <!--/.alv-ch-ng.bootstrap -->
     <link rel="stylesheet" type="text/css" href="lib/alv-ch-ng/css/alv-ch-bootstrap.min.css"/>
-    <!--/.css - essentials -->
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap-select/css/bootstrap-select.min.css"/>
 
     <!--/.dev - essentials -->
     <link rel="stylesheet" type="text/css" href="/css/ng-dev.css"/>
@@ -77,7 +77,7 @@
     </div>
 </div>
 <!--/.navbar -->
-
+<!--
 <div class="system-messages">
     <message message-severity="info" message-dismissable="true" message-dismissable-text="No thanks">
         <span>
@@ -85,13 +85,6 @@
             <a class="pointer" data-toggle="modal" data-target="#survey">Take the 3 minutes survey</a>. This will open a short survey.
         </span>
     </message>
-
-    <modal modal-title="Help us improve Job-Room" modal-id="survey" modal-form="/#/job/search" modal-submit="Submit">
-        <p>Please don't include any personal or financial information, for example your National Insurance or credit
-            card numbers.</p>
-        <input type="text" form-input="commonReportAProblemLabel1" id="exampleInputEmail2"/>
-        <input type="text" form-input="commonReportAProblemLabel2" id="exampleInputPassword2"/>
-    </modal>
 </div>
 <!--/.system messages -->
 

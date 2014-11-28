@@ -1,6 +1,6 @@
 define(['angularAMD'], function (angularAMD) {
 
-    var app = angular.module('alv-ch-ng-demo-public', ['ngRoute', 'ngCookies', 'alv-ch-ng.ui-core', 'alv-ch-ng.ui-forms', 'alv-ch-ng.i18n',
+    var app = angular.module('alv-ch-ng-demo-public', ['ngRoute', 'ngCookies', 'alv-ch-ng.ui-core', 'alv-ch-ng.ui-scroll', 'alv-ch-ng.ui-forms', 'alv-ch-ng.i18n',
     'demo-common.i18n', 'demo-common.constants','ng-dev']);
 
     app.controller('PublicMainCtrl', function($scope, $http, $cookies, $routeParams, $location, I18nPropertyService, I18nService, applicationVersion, applicationReleaseNote){

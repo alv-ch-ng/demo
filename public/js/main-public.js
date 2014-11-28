@@ -28,6 +28,7 @@ require.config({
         'alv-ch-ng.i18n':               'lib/alv-ch-ng/alv-ch-ng.i18n',
         'alv-ch-ng.ui-core':            'lib/alv-ch-ng/alv-ch-ng.ui-core',
         'alv-ch-ng.ui-forms':           'lib/alv-ch-ng/alv-ch-ng.ui-forms',
+        'alv-ch-ng.ui-scroll':          'lib/alv-ch-ng/alv-ch-ng.ui-scroll',
         'demo-common.i18n':             'js/modules/demo-common.i18n',
         'demo-common.constants':        'js/modules/demo-common.constants',
         'app':                          'js/application/application-public'
@@ -58,11 +59,17 @@ require.config({
                                         'angular',
                                         'angular-ui-tooltip',
                                         'angular-ui-typeahead',
-                                        'jQuery.ui.widget'
+                                        'jQuery.ui.widget',
+                                        'bootstrap-select'
                                     ],
         'alv-ch-ng.i18n':           [
                                         'angular',
                                         'jQuery.properties'
+                                    ],
+
+        'alv-ch-ng.ui-scroll':      [
+                                        'alv-ch-ng.ui-core',
+                                        'alv-ch-ng.i18n'
                                     ],
         'bootstrap':                ['jQuery'],
         'bootstrap-select':         [
@@ -86,6 +93,7 @@ require.config({
                                         'alv-ch-ng.i18n',
                                         'alv-ch-ng.ui-core',
                                         'alv-ch-ng.ui-forms',
+                                        'alv-ch-ng.ui-scroll',
                                         'demo-common.i18n',
                                         'demo-common.constants',
                                         'ng-dev',
