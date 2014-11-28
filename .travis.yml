@@ -6,10 +6,10 @@ install: npm install
 before_script: bower install
 deploy:
   provider: openshift
-  user: thomas@dasco.li
+  user: mediamatik@seco.admin.ch
   password:
-    secure: Zzev8zyeYcmB6fe/Z0U2HYxJUHR6vVkRRJotvkm3lDyglgLMjzE4582lSMCY5rWS2xyYHIpJTjysO4IfRW6DaeAIKUV4Ty9Y8xxaeG11urCRZlVIyEtIrNRvcdx4b0mQfm6R3f9CKhZYuHyL+W+Lm/y0S52fKI+64+YU6VxxJdI=
+    secure: UBzfcR82i73ODJJadK5WlqF1Phxkp/U4Neq1Tlz//gaSuRyH4h3XESren7mdVQ2lII2ADccW9MwvrErStdWHdsVymRXUxCf1foL8CvECBdfIPRf0VMF21VDTKVx91nJStfpt74H6lHejSiDWnvtLb+w9cdvx29J2z0JoWmo57qc=
   app: ngdemo
-  domain: dascoli
+  domain: alvch
   on:
     repo: tdascoli/alv-ch-ng.demo
