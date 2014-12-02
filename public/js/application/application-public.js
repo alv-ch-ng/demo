@@ -7,6 +7,59 @@ define(['angularAMD'], function (angularAMD) {
         $scope.applicationVersion = applicationVersion;
         $scope.applicationReleaseNote = applicationReleaseNote;
 
+        $scope.adminIcons=['exclam',
+            'arrow-right',
+            'google',
+            'bottom',
+            'left',
+            'disc',
+            'screen',
+            'notebook',
+            'smartphone-portrait',
+            'smartphone-landscape',
+            'tablet-portrait',
+            'tablet-landscape',
+            'right',
+            'top',
+            'less',
+            'greater',
+            'eye',
+            'pdf',
+            'trash',
+            'cart',
+            'star',
+            'list',
+            'message',
+            'print',
+            'rss',
+            'search',
+            'word',
+            'excel',
+            'power',
+            'calendar',
+            'doc',
+            'pause',
+            'facebook',
+            'step-backward',
+            'step-forward',
+            'list-alt',
+            'backward',
+            'forward',
+            'external',
+            'menu',
+            'corner',
+            'tools',
+            'play',
+            'settings',
+            'twitter',
+            'fast-backward',
+            'fast-forward',
+            'root',
+            'square',
+            'close',
+            'arrow-bottom',
+            'arrow-left',
+            'arrow-top'];
         $scope.languages=[{name:'deutsch'},{name:'francais'},{name:'italiano'}];
 
         if($cookies.language!=null){
@@ -368,13 +421,17 @@ define(['angularAMD'], function (angularAMD) {
                 angularAMD.route({
                     templateUrl: '/pages/common/welcome.html'
                 }))
-            .when('/gettingStarted',
+            .when('/getting_started',
             angularAMD.route({
                 templateUrl: '/pages/info/getting_started.html'
             }))
             .when('/less',
             angularAMD.route({
                 templateUrl: '/pages/info/less.html'
+            }))
+            .when('/angular',
+            angularAMD.route({
+                templateUrl: '/pages/info/ng.html'
             }))
             .when('/components',
                 angularAMD.route({

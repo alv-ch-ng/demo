@@ -41,13 +41,11 @@
 
     <script data-main="js/main-public.js" src="lib/requirejs/require.js"></script>
 </head>
-<body>
-<!--
-<div class="bg bundeshaus" data-stellar-background-ratio="0.5"></div>
--->
+<body scroll-up="footer-container">
 <div class="navbar navbar-inverse" role="navigation" id="navbar" scroll-fix>
     <div class="container">
         <div class="navbar-header">
+            <sidebar-toggle></sidebar-toggle>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#global-navigation">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -61,7 +59,7 @@
         <div class="collapse navbar-collapse" id="global-navigation">
             <ul class="nav navbar-nav">
                 <li active-startswith="/gettingStarted">
-                    <a href="#/gettingStarted" class="pointer" i18n-msg="nav.gettingStarted"></a>
+                    <a href="#/getting_started" class="pointer" i18n-msg="nav.gettingStarted"></a>
                 </li>
                 <li active-startswith="/less">
                     <a href="#/less" class="pointer" i18n-msg="nav.less"></a>

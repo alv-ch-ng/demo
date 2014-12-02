@@ -21,7 +21,7 @@
         "angular-route": "latest",
         "angular-cookies": "latest",
         "angular-sanitize": "latest",
-        "alv-ch-ng":"0.1.0-rc1",
+        "alv-ch-ng":"latest",
         "jasmine": "latest",
         "jquery-ui": "latest",
         "angularAMD":"latest",

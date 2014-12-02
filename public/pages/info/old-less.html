@@ -150,6 +150,17 @@
             <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
             <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
         </div>
+        <div highlight class="highlight">
+WebFontConfig = {
+    custom: {
+        families: ['Frutiger Neue','Frutiger Neue Light','Admin Icons']
+    }
+};
+
+<!-- IE -->
+<link rel="stylesheet" type="text/css" href="lib/alv-ch-ng/css/frutiger.min.css" media="screen, projection"/>
+<link rel="stylesheet" type="text/css" href="lib/alv-ch-ng/css/admin-icons.min.css" media="screen, projection"/>
+        </div>
 
         <h3>Secondary Font: Open Sans</h3>
         <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">See Google Fonts Page for more Details</a>.
@@ -161,6 +172,20 @@
             <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
             <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
             <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+        </div>
+        <div highlight class="highlight">
+WebFontConfig = {
+    google: { families: ['Open+Sans:400italic,700italic,400,700:latin'] }
+};
+(function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+})();
         </div>
 
         <h2 class="toc" id="form_elements">Forms</h2>

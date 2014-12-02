@@ -18,6 +18,10 @@
     vertical-align: middle;
 }
 
+.container {
+    min-height: 100%;
+}
+
 /** bootstrap logo */
 .bs-docs-booticon {
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -41,4 +45,41 @@ text-align: center;
 cursor: default;
 background-color: #563d7c;
 border-radius: 15%;
+}
+
+/* glyphicons */
+.bs-glyphicons {
+    margin: 0 -10px 20px;
+    overflow: hidden;
+}
+.bs-glyphicons-list {
+    padding-left: 0;
+    list-style: none;
+}
+.bs-glyphicons li {
+    float: left;
+    width: 12.5%;
+    font-size: 12px;
+    height: 100px;
+    padding: 10px;
+    line-height: 1.4;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #fff;
+}
+.bs-glyphicons .glyphicon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: 'Frutiger Neue Light', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+.bs-glyphicons .adminIcons {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.bs-glyphicons li:hover {
+    color: #fff;
+    background-color: rgb(159, 204, 226);
 }
