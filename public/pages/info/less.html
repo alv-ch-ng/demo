@@ -164,11 +164,77 @@
         </div>
 
         <h2 class="toc" id="form_elements">Forms</h2>
+        <h3 id="basic_form">Basic Form</h3>
+        <div highlight="this">
+<form role="form">
+    <input type="text" form-input form-label="testLabel"
+           form-helptext="testHelptext" name="testInput" id="testInput1" ng-model="searchCriteria.inputTest1"
+           i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+    <textarea form-textarea form-label="testLabel"
+              form-helptext="testHelptext" form-textarea-large="true"></textarea>
+
+    <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox10"
+           ng-model="searchCriteria.checkboxTest10"/>
+
+    <input type="radio"form-label="testLabel" name="textRadio1" id="textRadio1_10"
+           ng-model="searchCriteria.radioTest10"/>
+    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio1_20"
+           ng-model="searchCriteria.radioTest10"/>
+</form>
+        </div>
+
+        <h3 id="horizontal_form">Horizontal Form</h3>
+        <div highlight="this">
+<form class="form-horizontal" role="form">
+    <input type="text" form-input form-label="testLabel" name="testInput" id="testInput2" ng-model="searchCriteria.inputTest1"
+           i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+    <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
+
+    <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox2"
+           ng-model="searchCriteria.checkboxTest10"/>
+
+    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_10"
+           ng-model="searchCriteria.radioTest10"/>
+    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_20"
+           ng-model="searchCriteria.radioTest10"/>
+</form>
+        </div>
+
+        <h3 id="inline_form">Inline Form</h3>
+        <div highlight="this">
+<form class="form-inline" role="form">
+    <input type="text" form-input form-label="testLabel" name="testInput" id="testInput3" ng-model="searchCriteria.inputTest1"
+           i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+    <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
+
+    <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox3"
+           ng-model="searchCriteria.checkboxTest10"/>
+
+    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_10"
+           ng-model="searchCriteria.radioTest10"/>
+    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_20"
+           ng-model="searchCriteria.radioTest10"/>
+</form>
+        </div>
 
         <h2 class="toc" id="buttons">Buttons</h2>
+        <div highlight="this">
+<button class="btn-primary">
+    Primary Button
+</button>
+
+<button>
+    Default Button
+</button>
+        </div>
 
         <h2 class="toc" id="responsive">Responsive</h2>
+        <p class="info-notice">Under Construction</p>
 
-        <h2 class="toc" id="using_less">Using Less (?!)</h2>
+        <h2 class="toc" id="using_less">Using Less</h2>
+        <p class="info-notice">Under Construction</p>
     </div>
 </div>

@@ -29,7 +29,8 @@
         "angular-bootstrap": "latest",
         "angular-mocks": "latest",
         "ng-dev": "latest",
-        "highlightjs":"latest"
+        "highlightjs":"latest",
+        "octicons": "*"
     },
     "resolutions": {
         "jquery": "~2.1.1",

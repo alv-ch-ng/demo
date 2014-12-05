@@ -6,6 +6,8 @@
 
     <title>&lt;+alv-ch-ng /&gt;</title>
 
+    <script type="text/javascript" src="//d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js" data-token="5f7df97895b74d18a2a4bc6cffc78712"></script>
+
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
     <!--/.webfontloader -->
     <script src="lib/components-webfontloader/webfont.js" type="text/javascript" async=""></script>
@@ -38,11 +40,21 @@
     <link rel="stylesheet" type="text/css" href="lib/ng-dev/css/github.min.css"/>
 
     <link rel="stylesheet" type="text/css" href="/css/ngdemo.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/octicons/octicons.css"/>
 
     <script data-main="js/main-public.js" src="lib/requirejs/require.js"></script>
 </head>
 <body scroll-up="footer-container">
-<div class="navbar navbar-inverse" role="navigation" id="navbar" scroll-fix>
+<div id="systembar" class="systembar" scroll-fix>
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="pointer" href="https://github.com/alv-ch/alv-ch-ng" target="_blank"><span class="octicon octicon-mark-github"></span> Github</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="navbar navbar-inverse" role="navigation" id="navbar" scroll-fix="systembar">
     <div class="container">
         <div class="navbar-header">
             <sidebar-toggle></sidebar-toggle>

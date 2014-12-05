@@ -51,6 +51,69 @@
 </div>
         </div>
 
+        <h2 class="toc" id="autocompleter">Autocompleter / Input Tag / Input Dropdown</h2>
+        <div highlight="this" highlight-model="tags">
+
+<input type="text"
+       form-input
+       form-label="testLabel"
+       typeahead="city as city.text for city in cities | filter:{text:$viewValue}"
+       typeahead-append-to-body="true"
+       i18n-attribute="placeholder"
+       i18n-value="testAutoCompletePlaceholder"
+       ng-model="selected" />
+
+<input type="text"
+       form-tag="testLabel"
+       form-target-model="tags"
+       form-label="testLabel"
+       typeahead="city as city.text for city in cities | filter:{text:$viewValue}"
+       typeahead-on-select="addToTargetModel($item)"
+       typeahead-append-to-body="true"
+       i18n-attribute="placeholder"
+       i18n-value="testAutoCompletePlaceholder"
+       ng-model="selected" />
+
+<div type="text"
+     form-tag="testLabel"
+     form-target-model="tags"
+     form-label="testLabel"
+     form-append-dropdown="berufsgruppen"
+     form-append-dropdown-title="Berufsgruppen"
+     i18n-attribute="placeholder"
+     i18n-value="testAutoCompletePlaceholder"
+     ng-model="selected"></div>
+
+<input type="text"
+       form-tag="testLabel"
+       form-target-model="tags"
+       form-label="testLabel"
+       form-helptext="testHelptext"
+       form-append-dropdown="berufsgruppen"
+       form-append-dropdown-title="Berufsgruppen"
+       typeahead="city as city.text for city in cities | filter:{text:$viewValue}"
+       typeahead-on-select="addToTargetModel($item)"
+       typeahead-append-to-body="true"
+       i18n-attribute="placeholder"
+       i18n-value="testAutoCompletePlaceholder"
+       ng-model="selected" />
+
+        </div>
+
+        <h2 class="toc" id="better_label">Better Label/Placeholders</h2>
+        <div highlight="this">
+
+<input type="text" form-input form-placeholder="testLabel" form-placeholder-type="label" id="test1"
+       ng-model="searchCriteria.placeholder1"/>
+
+<input type="text" form-input form-placeholder="testLabel" form-placeholder-type="inside" id="test2"
+       ng-model="searchCriteria.placeholder2"/>
+
+<input type="text" form-input form-placeholder="testLabel" form-placeholder-type="outline" id="test3"
+       ng-model="searchCriteria.placeholder3"/>
+
+        </div>
+
         <h2 class="toc">ScrollFix</h2>
 
         <p class="info-notice">Under Construction</p>

@@ -5,6 +5,7 @@ define(['angularAMD'], function (angularAMD) {
 
     app.controller('PublicMainCtrl', function($scope, $http, $cookies, $routeParams, $location, I18nPropertyService, I18nService, applicationVersion, applicationReleaseNote){
         $scope.applicationVersion = applicationVersion;
+        $scope.applicationVersion = applicationVersion;
         $scope.applicationReleaseNote = applicationReleaseNote;
 
         $scope.adminIcons=['exclam',

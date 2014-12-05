@@ -21,6 +21,19 @@
 .container {
     min-height: 100%;
 }
+/* example styles */
+.ex_alv .sidebar {
+    float: none;
+    width: 300px;
+}
+.ex_alv .navbar-header {
+    float: none;
+    width: 100%;
+    background-color: black;
+}
+.ex_alv .navbar-header .sidebar-toggle {
+    display: block !important;
+}
 
 /** bootstrap logo */
 .bs-docs-booticon {
@@ -58,7 +71,7 @@ border-radius: 15%;
 }
 .bs-glyphicons li {
     float: left;
-    width: 12.5%;
+    width: 12%;
     font-size: 12px;
     height: 100px;
     padding: 10px;
@@ -82,4 +95,10 @@ border-radius: 15%;
 .bs-glyphicons li:hover {
     color: #fff;
     background-color: rgb(159, 204, 226);
+}
+
+/* github */
+a[href*='github.com']:after {
+    margin-left: 0;
+    content: "";
 }

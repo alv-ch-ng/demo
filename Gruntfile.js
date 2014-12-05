@@ -138,6 +138,16 @@
                     }],
                     verbose: true
                 },
+                octicons: {
+                    files: [{
+                        cwd: 'components/octicons/octicons',
+                        src: [
+                            '**'
+                        ],
+                        dest: 'public/lib/octicons'
+                    }],
+                    verbose: true
+                },
                 ng: {
                     files: [{
                         cwd: 'components/angular',
