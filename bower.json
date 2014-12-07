@@ -30,7 +30,8 @@
         "angular-mocks": "latest",
         "ng-dev": "latest",
         "highlightjs":"latest",
-        "octicons": "*"
+        "octicons": "*",
+        "track.js": "latest"
     },
     "resolutions": {
         "jquery": "~2.1.1",

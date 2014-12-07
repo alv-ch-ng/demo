@@ -148,6 +148,16 @@
                     }],
                     verbose: true
                 },
+                trackJs: {
+                    files: [{
+                        cwd: 'components/track.js',
+                        src: [
+                            '*.js'
+                        ],
+                        dest: 'public/lib/track.js'
+                    }],
+                    verbose: true
+                },
                 ng: {
                     files: [{
                         cwd: 'components/angular',
