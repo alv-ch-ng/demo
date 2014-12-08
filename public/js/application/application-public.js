@@ -442,6 +442,19 @@ define(['angularAMD'], function (angularAMD) {
         $routeProvider.otherwise({templateUrl: '/pages/common/404.html'});
     });
 
+    app.config(["$provide", function ($provide) {
+
+        $provide.decorator("$exceptionHandler", ["$delegate", "$window", function($delegate, $window) {
+            return function (exception, cause) {
+                if ($window.trackJs) {
+                    $window.trackJs.track(exception);
+                }
+                // (Optional) Pass the error through to the delegate formats it for the console
+                $delegate(exception, cause);
+            };
+        }]);
+    }]);
+
     angularAMD.bootstrap(app);
 
     return app;
