@@ -108,3 +108,8 @@ a[href*='github.com']:after {
     margin-left: 0;
     content: "";
 }
+
+/* release notes */
+.show.alpha a, .show.beta a, .show.poc a, .show.rc a {
+    height: 100%;
+}
