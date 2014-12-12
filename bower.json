@@ -1,6 +1,6 @@
 {
     "name": "alv-ch-ng.demo",
-    "version": "0.0.1-snapshot",
+    "version": "1.0.0",
     "ignore": [
         ".idea",
         "lib",
@@ -10,28 +10,26 @@
         ".gitignore",
         ".jshintignore",
         ".jshintrc",
-        "alv-sysinfos.iml",
         "bower.json",
         "Gruntfile.js",
         "package.json",
         "README.md"
     ],
     "dependencies": {
-        "angular":"latest",
+        "angular": "latest",
         "angular-route": "latest",
         "angular-cookies": "latest",
         "angular-sanitize": "latest",
-        "alv-ch-ng":"latest",
-        "jasmine": "latest",
-        "jquery-ui": "latest",
-        "angularAMD":"latest",
-        "ng-placeholders": "0.0.3-SNAPSHOT",
+        "autofill-event": "latest",
+        "alv-ch-ng": "latest",
+        "bootstrapaccessibilityplugin":"latest",
+        "jquery-i18n-property": "git://github.com/alv-ch/jquery-i18n-properties.git",
         "angular-bootstrap": "latest",
         "angular-mocks": "latest",
-        "ng-dev": "latest",
+        "restangular": "~1.4.0",
+        "track.js": "latest",
         "highlightjs":"latest",
-        "octicons": "*",
-        "track.js": "latest"
+        "octicons": "*"
     },
     "resolutions": {
         "jquery": "~2.1.1",
