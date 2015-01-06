@@ -34,12 +34,12 @@
                 }
             },
             "jshint": {
-                "dev": {
-                    "options": {
-                        "jshintrc": ".jshintrc"
+                'dev': {
+                    'options': {
+                        'jshintrc': '.jshintrc'
                     },
-                    "files": {
-                        "src": "src/js/**/*.js"
+                    'files': {
+                        'src': 'src/js/**/*.js'
                     }
                 }
             },
@@ -64,7 +64,7 @@
             },
             watch: {
                 dev: {
-                    files: "src/js/**/*.js",
+                    files: 'src/js/**/*.js',
                     tasks: ['jshint:dev']
                 }
             },
