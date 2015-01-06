@@ -43,6 +43,7 @@
         "jshint": "*",
         "travis": "*",
         "body-parser": "*",
-        "method-override": "*"
+        "method-override": "*",
+        "browser-sync": "1.8.2"
     }
 }
