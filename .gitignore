@@ -2,7 +2,7 @@
 .idea/**/*
 *.iml
 components/**/*
-src/fonts/**/*
+**/fonts/**/*
 src/lib/**/*
 node_modules/**/*
 server.js

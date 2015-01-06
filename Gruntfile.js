@@ -107,10 +107,10 @@
         grunt.registerTask('dev', ['browserSync', 'watch']);
 
         // BUILD
-        grunt.registerTask('build', ['clean','copy']);
+        grunt.registerTask('build', ['build-alv-ch']);
 
         // Default task.
-        grunt.registerTask('default', ['build-alv-ch']);
+        grunt.registerTask('default', ['clean:dist','copy']);
     };
 
 })();
