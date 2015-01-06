@@ -2,6 +2,10 @@
     'use strict';
 
     module.exports = function (grunt) {
+        // load all grunt tasks matching the `grunt-*` pattern
+        require('load-grunt-tasks')(grunt);
+        // require it at the top and pass in the grunt instance
+        require('time-grunt')(grunt);
 
         // Project configuration.
         grunt.initConfig({
@@ -68,20 +72,36 @@
                         watchTask: true
                     }
                 }
+            },
+            copy: {
+                options: {
+                    banner: '<%= banner %>'
+                },
+                main: {
+                    files: [
+                        {
+                            expand: true,
+                            flatten: true,
+                            src: [
+                                'src/js/alv-ch-ng.common.js',
+                                'src/ng/alv-ch-ng.ui-scroll.js'
+                            ],
+                            dest: 'dist',
+                            filter: 'isFile'
+                        }
+                    ]
+                }
             }
         });
-
-        grunt.loadNpmTasks('grunt-build-alv-ch');
-        grunt.loadNpmTasks('grunt-coveralls');
-        grunt.loadNpmTasks('grunt-contrib-jshint');
-        grunt.loadNpmTasks('grunt-browser-sync');
-        grunt.loadNpmTasks('grunt-contrib-watch');
 
         // CI
         grunt.registerTask('travis', ['build-alv-ch', 'coveralls']);
 
         // DEV
         grunt.registerTask('dev', ['browserSync', 'watch']);
+
+        // BUILD
+        grunt.registerTask('build', ['build']);
 
         // Default task.
         grunt.registerTask('default', ['build-alv-ch']);

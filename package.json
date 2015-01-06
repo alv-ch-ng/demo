@@ -6,23 +6,13 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/alv-ch/alv-ch-ng.demo"
+        "url": "https://github.com/tdascoli/alv-ch-ng.demo"
     },
     "engines": {
         "node": ">= 0.10.0",
         "npm": ">= 1.0.0"
     },
     "dependencies": {
-        "express": "*",
-        "body-parser": "*",
-        "method-override": "*"
-    },
-    "devDependencies": {
-        "bower": "*",
-        "colors": "*",
-        "express": "^4.9.0",
-        "grunt": "*",
-        "grunt-build-alv-ch": "git+https://github.com/alv-ch/grunt-build-alv-ch.git",
         "grunt-cli": "^0.1.13",
         "grunt-contrib-clean": "*",
         "grunt-contrib-copy": "*",
@@ -38,22 +28,21 @@
         "grunt-processhtml": "*",
         "grunt-coveralls": "*",
         "grunt-sync": "*",
+        "requirejs": "*"
+    },
+    "devDependencies": {
+        "load-grunt-tasks": "*",
+        "time-grunt": "*",
+        "bower": "*",
+        "colors": "*",
+        "express": "^4.9.0",
+        "grunt": "*",
+        "grunt-build-alv-ch": "git+https://github.com/alv-ch/grunt-build-alv-ch.git",
         "karma": "*",
         "phantomjs": "*",
         "jshint": "*",
         "travis": "*",
-        "requirejs": "*"
-    },
-    "folders": {
-        "dev": "dev",
-        "dist": "dist",
-        "main": "src/main",
-        "test": "src/test",
-        "build": "build",
-        "config": "private/config",
-        "private": "private"
-    },
-    "bundleDependencies": [],
-    "private": true,
-    "main": "server.js"
+        "body-parser": "*",
+        "method-override": "*"
+    }
 }
