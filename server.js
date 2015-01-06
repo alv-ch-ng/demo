@@ -5,7 +5,7 @@
 
     var defaults = {
         serverHost: 'localhost',
-        serverPort: 8888,
+        serverPort: 8088,
         appName: 'alv-ch-ng.demo:dev',
         staticFolder: 'src'
     };
