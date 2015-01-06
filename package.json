@@ -1,51 +1,50 @@
 {
-    "name": "alv-ch-ng.demo",
-    "version": "1.0.0",
-    "description": "Demo Site alv-ch-ng.",
-    "author": "ALV-CH",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/tdascoli/alv-ch-ng.demo"
-    },
-    "engines": {
-        "node": ">= 0.10.0",
-        "npm": ">= 1.0.0"
-    },
-    "dependencies": {
-        "grunt-cli": "^0.1.13",
-        "grunt-contrib-clean": "*",
-        "grunt-contrib-copy": "*",
-        "grunt-contrib-cssmin": "*",
-        "grunt-contrib-jasmine": "*",
-        "grunt-contrib-uglify": "*",
-        "grunt-template-jasmine-istanbul": "*",
-        "grunt-karma": "*",
-        "grunt-karma-coveralls": "*",
-        "grunt-contrib-jshint": "*",
-        "grunt-contrib-watch": "*",
-        "grunt-browser-sync": "*",
-        "grunt-processhtml": "*",
-        "grunt-coveralls": "*",
-        "grunt-sync": "*",
-        "requirejs": "*"
-    },
-    "devDependencies": {
-        "angular": "latest",
-        "angular-route": "latest",
-        "load-grunt-tasks": "*",
-        "time-grunt": "*",
-        "bower": "*",
-        "colors": "*",
-        "express": "^4.9.0",
-        "grunt": "*",
-        "grunt-build-alv-ch": "git+https://github.com/alv-ch/grunt-build-alv-ch.git",
-        "karma": "*",
-        "phantomjs": "*",
-        "jshint": "*",
-        "travis": "*",
-        "body-parser": "*",
-        "method-override": "*",
-        "browser-sync": "1.8.2"
-    }
+  "name": "alv-ch-ng.demo",
+  "version": "1.0.0",
+  "description": "Demo Site alv-ch-ng.",
+  "author": "ALV-CH",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tdascoli/alv-ch-ng.demo"
+  },
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jasmine": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-karma": "*",
+    "grunt-karma-coveralls": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-browser-sync": "*",
+    "grunt-processhtml": "*",
+    "grunt-coveralls": "*",
+    "grunt-sync": "*",
+    "grunt-build-alv-ch": "git+https://github.com/alv-ch/grunt-build-alv-ch.git"
+  },
+  "devDependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*",
+    "bower": "*",
+    "colors": "*",
+    "express": "^4.9.0",
+    "grunt": "*",
+    "grunt-template-jasmine-istanbul": "^0.3.0",
+    "karma": "*",
+    "phantomjs": "*",
+    "jshint": "*",
+    "travis": "*",
+    "body-parser": "*",
+    "method-override": "*",
+    "browser-sync": "1.8.2"
+  }
 }
