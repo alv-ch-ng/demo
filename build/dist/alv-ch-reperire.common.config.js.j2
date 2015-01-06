@@ -1,0 +1,11 @@
+;(function () {
+    'use strict';
+
+    var module = angular.module('alv-ch-ng.demo.common.config', []);
+
+    module.constant('applicationVersion', '{{ ngdemo.version }}');
+    module.constant('applicationReleaseNote', 'rc');
+    module.constant('apiServerBasePath', '{{ ngdemo.api.url }}');
+    module.constant('defaultPollingTime', 200000);
+
+}());

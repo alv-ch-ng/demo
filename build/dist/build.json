@@ -1,0 +1,26 @@
+{
+    "target": "dist",
+    "src": "src",
+    "skip": [],
+    "tasks": {
+        "uglify": {
+            "distPublic": {
+                "options": {
+                    "mangle": false
+                },
+                "files": {
+                    "<%= build.target %>/js/application-public.min.js": [
+                        "<%= build.target %>/lib/lib.min.js",
+                        "build/<%= build.target %>/alv-ch-ng.demo.common.config.js",
+                        "<%= build.src %>/js/modules/alv-ch-reperire.common.i18n.js",
+                        "<%= build.src %>/js/modules/alv-ch-reperire.common.messages.js",
+                        "<%= build.src %>/js/modules/alv-ch-reperire.common.resource.js",
+                        "<%= build.src %>/js/modules/alv-ch-reperire.common.ui.js",
+                        "<%= build.src %>/js/modules/alv-ch-reperire.common.constants.js",
+                        "<%= build.src %>/js/alv-ch-ng.demo.public.js"
+                    ]
+                }
+            }
+        }
+    }
+}
