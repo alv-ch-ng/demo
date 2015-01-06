@@ -31,6 +31,8 @@
         "requirejs": "*"
     },
     "devDependencies": {
+        "angular": "latest",
+        "angular-route": "latest",
         "load-grunt-tasks": "*",
         "time-grunt": "*",
         "bower": "*",
