@@ -87,10 +87,11 @@
                         {
                             expand: true,
                             flatten: false,
+                            cwd: 'src/',
                             src: [
-                                'src/**/*',
-                                '!src/fonts/**/*',
-                                '!src/lib/**/*'
+                                '**/*',
+                                '!fonts/**/*',
+                                '!lib/**/*'
                             ],
                             dest: 'dist',
                             filter: 'isFile'
