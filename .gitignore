@@ -1,14 +1,9 @@
 .grunt/**/*
 .idea/**/*
 *.iml
-
-**/fonts/Frutiger*/**/*
-
 components/**/*
-dev/**/*
-dist/**/*
+src/fonts/**/*
+src/lib/**/*
 node_modules/**/*
-private/**/*
-test/reports/**/*
-_SpecRunner.html
+server.js
 

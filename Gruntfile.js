@@ -43,6 +43,11 @@
                     }
                 }
             },
+            clean: {
+                all: ['dist', 'build'],
+                dist: ['dist'],
+                build: ['build']
+            },
             coveralls: {
                 options: {
                     // LCOV coverage file relevant to every target
@@ -81,10 +86,11 @@
                     files: [
                         {
                             expand: true,
-                            flatten: true,
+                            flatten: false,
                             src: [
-                                'src/js/alv-ch-ng.common.js',
-                                'src/ng/alv-ch-ng.ui-scroll.js'
+                                'src/**/*',
+                                '!src/fonts/**/*',
+                                '!src/lib/**/*'
                             ],
                             dest: 'dist',
                             filter: 'isFile'
@@ -101,7 +107,7 @@
         grunt.registerTask('dev', ['browserSync', 'watch']);
 
         // BUILD
-        grunt.registerTask('build', ['build']);
+        grunt.registerTask('build', ['clean','copy']);
 
         // Default task.
         grunt.registerTask('default', ['build-alv-ch']);

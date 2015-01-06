@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="alv-ch-ng.demo">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title i18n-msg="common.site.title"></title>
+
+    <!-- track.js -->
+    <script type="text/javascript" src="lib/tracker.js" data-token="5f7df97895b74d18a2a4bc6cffc78712"></script>
+    <script>
+        window._trackJs = {
+            token: "5f7df97895b74d18a2a4bc6cffc78712",
+            application: "ngdemo"
+        }
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+
+    <!--/.webfontloader -->
+    <script>
+        WebFontConfig = {
+            custom: {
+                families: ['Frutiger Neue','Frutiger Neue Light','Admin Icons']
+            },
+            google: { families: ['Open+Sans:400italic,700italic,400,700:latin'] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" type="text/css" href="lib/admin-icons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/alv-ch-bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-accessibility.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/frutiger.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/alv-ch-ng.demo.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/github.css"/>
+    <!-- /build -->
+    <link rel="stylesheet" type="text/css" href="lib/octicons/octicons.css"/>
+    <!-- build:js js/application-public.min.js -->
+    <script src="lib/lib.min.js"></script>
+    <script src="conf/alv-ch-ng.demo.common.config.js"></script>
+    <script src="js/modules/alv-ch-ng.demo.common.i18n.js"></script>
+    <script src="js/modules/alv-ch-ng.demo.common.messages.js"></script>
+    <script src="js/modules/alv-ch-ng.demo.common.resource.js"></script>
+    <script src="js/modules/alv-ch-ng.demo.common.ui.js"></script>
+    <script src="js/modules/alv-ch-ng.demo.common.constants.js"></script>
+    <script src="js/alv-ch-ng.demo.public.js"></script>
+    <!-- /build -->
+</head>
+<body>
+<div id="systembar" class="systembar" scroll-fix>
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="pointer" href="https://github.com/alv-ch/alv-ch-ng" target="_blank"><span class="octicon octicon-mark-github"></span> Github</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<si-navbar>
+    <ul class="nav navbar-nav">
+        <li active-startswith="/getting_started">
+            <a href="#/getting_started" class="pointer" i18n-msg="nav.gettingStarted"></a>
+        </li>
+        <li active-startswith="/less">
+            <a href="#/less" class="pointer" i18n-msg="nav.less"></a>
+        </li>
+        <li active-startswith="/components">
+            <a href="#/components" class="pointer" i18n-msg="nav.components"></a>
+        </li>
+        <li active-startswith="/angular">
+            <a href="#/angular" class="pointer" i18n-msg="nav.ng"></a>
+        </li>
+    </ul>
+</si-navbar>
+
+<!--/.system messages -->
+
+<div class="container">
+    <si-release-note></si-release-note>
+    <messages message-scope="'global'"></messages>
+    <div id="main" ng-view class="ng-cloak"></div>
+</div>
+<!--./container -->
+
+<div class="container-footer" id="footer-container">
+    <si-footer></si-footer>
+</div>
+
+<!-- build:remove -->
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.1.7.2.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));
+//]]></script>
+<!-- /build -->
+</body>
+</html>

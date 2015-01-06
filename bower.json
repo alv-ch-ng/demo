@@ -1,40 +1,51 @@
 {
-    "name": "alv-ch-ng.demo",
-    "version": "1.0.0",
-    "ignore": [
-        ".idea",
-        "lib",
-        "node_modules",
-        "test",
-        ".bowerrc",
-        ".gitignore",
-        ".jshintignore",
-        ".jshintrc",
-        "bower.json",
-        "Gruntfile.js",
-        "package.json",
-        "README.md"
-    ],
-    "dependencies": {
-        "angular": "latest",
-        "angular-route": "latest",
-        "angular-cookies": "latest",
-        "angular-sanitize": "latest",
-        "autofill-event": "latest",
-        "bootstrapaccessibilityplugin":"latest",
-        "jquery-i18n-property": "git://github.com/alv-ch/jquery-i18n-properties.git",
-        "angular-bootstrap": "latest",
-        "angular-mocks": "latest",
-        "restangular": "~1.4.0",
-        "track.js": "latest",
-        "ng-dev":"latest",
-        "octicons": "*"
-    },
-    "devDependencies": {
-        "alv-ch-ng": "latest"
-    },
-    "resolutions": {
-        "jquery": "~2.1.1",
-        "angular": "~1.3.0"
-    }
+  "name": "alv-ch-ng.demo",
+  "version": "1.0.0",
+  "ignore": [
+    ".idea",
+    "lib",
+    "node_modules",
+    "test",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "**/.*",
+    "bower_components",
+    "components",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-cookies": "latest",
+    "angular-sanitize": "latest",
+    "autofill-event": "latest",
+    "bootstrapaccessibilityplugin": "latest",
+    "jquery-i18n-property": "git://github.com/alv-ch/jquery-i18n-properties.git",
+    "angular-bootstrap": "latest",
+    "angular-mocks": "latest",
+    "restangular": "~1.4.0",
+    "track.js": "latest",
+    "ng-dev": "latest",
+    "octicons": "*"
+  },
+  "devDependencies": {
+    "alv-ch-ng": "latest"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1",
+    "angular": "~1.3.0"
+  },
+  "homepage": "https://github.com/tdascoli/alv-ch-ng.demo",
+  "authors": [
+    "Thomas D'Ascoli <thomas@dasco.li>"
+  ],
+  "description": "Demo Site alv-ch-ng",
+  "main": "src/index.html",
+  "license": "MIT"
 }
