@@ -9,10 +9,10 @@
                             <span ng-bind="field['label_' + key]"  class="ng-scope" ></span>
                         </label>
                         <div ng-if="field.dataType !== 'TEXT'">
-                            <input id="{{ key + $index }}" type="{{ field.dataType.toLowerCase() }}" ng-blur="replaceKeywords(field.name, $index, key, false, false, true)" placeholder="{{ placeholder(field.name) }}" form-input name="{{ field.name + '_' + key }}" ng-model="field['data_' + key]"/>
+                            <input id="input_{{ key + $index }}" type="{{ field.dataType.toLowerCase() }}" ng-blur="replaceKeywords(field.name, $index, key, false, false, true)" placeholder="{{ placeholder(field.name) }}" form-input name="{{ field.name + '_' + key }}" ng-model="field['data_' + key]"/>
                         </div>
                         <div ng-if="field.dataType === 'TEXT'">
-                            <textarea id="{{ key + $index }}" form-textarea ng-model="field['data_' + key]" ng-blur="replaceKeywords(field.name, $index, key, false, false, true)" placeholder="{{ placeholder(field.name) }}" name="{{ field.name + '_' + key }}" ></textarea>
+                            <textarea id="text_{{ key + $index }}" form-textarea ng-model="field['data_' + key]" ng-blur="replaceKeywords(field.name, $index, key, false, false, true)" placeholder="{{ placeholder(field.name) }}" name="{{ field.name + '_' + key }}" ></textarea>
                         </div>
                         <br />
                     </div>

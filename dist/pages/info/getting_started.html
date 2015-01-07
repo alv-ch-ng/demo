@@ -19,6 +19,23 @@ $ bower install alv-ch-ng
             </pre>
         </div>
 
+        <h2 class="toc">Grunt</h2>
+        There are several Grunt tasks to improve the quality and the progress developing alv-ch-ng.<br />
+        <strong>"Quality" tasks</strong>
+        <ul>
+            <li><code>$ grunt <strong>unit-test</strong></code> starts <a href="http://jasmine.github.io/" target="_blank">Jasmine</a> test</li>
+            <li><code>$ grunt <strong>jshint-test</strong></code> starts <a href="http://jshint.com" target="_blank">JSHint</a> test</li>
+            <li><code>$ grunt <strong>lesslint-test</strong></code> starts <a href="http://jgable.github.io/grunt-lesslint/" target="_blank">LESS Lint</a> test</li>
+            <li><code>$ grunt <strong>all-test</strong></code> runs all tests</li>
+        </ul>
+
+        <strong>Development tasks</strong>
+        <ul>
+            <li><code>$ grunt <strong>prepare</strong></code> prepares the demo application, <a href="https://github.com/tdascoli/alv-ch-ng.demo" target="_blank">alv-ch-ng.demo</a></li>
+            <li><code>$ grunt <strong>build</strong></code> build all necessery files (angular, alv-ch-ng, and more) for the demo application</li>
+            <li><code>$ grunt <strong>dev</strong></code> starts the <a href="http://www.browsersync.io/" target="_blank">BrowserSync</a> task for developing. Runs the necessary tests from above after changing the sourcecode and updates the browser view.</li>
+        </ul>
+
         <h2 class="toc">Compiling LESS</h2>
         alv-ch-ng can be used in at least two ways: with the compiled CSS or with the source Less files. To compile the Less files, visit <a href="http://www.lesscss.org" target="_blank">the official Less website</a> to run the necessary commands.
 

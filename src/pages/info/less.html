@@ -18,7 +18,7 @@
             <h4>Job-Room Colors</h4>
 
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="11335a" ph-img-text="ffffff" />
+                <img ph-img="120x90" ph-img-fill="11335a" ph-img-text="ffffff" alt="darker blue" />
                 <div class="img-polaroid swatch">
                     <span class="name">darker blue</span>
                     <span class="html">#11335a</span>
@@ -27,7 +27,7 @@
             </span>
 
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="1c5494" ph-img-text="ffffff" />
+                <img ph-img="120x90" ph-img-fill="1c5494" ph-img-text="ffffff" alt="dark blue" />
                 <div class="img-polaroid swatch">
                     <span class="name">dark blue</span>
                     <span class="html">#1c5494</span>
@@ -36,7 +36,7 @@
             </span>
 
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="9fcce2" ph-img-text="000000" />
+                <img ph-img="120x90" ph-img-fill="9fcce2" ph-img-text="000000" alt="blue" />
                 <div class="img-polaroid swatch">
                     <span class="name">blue</span>
                     <span class="html">#9fcce2</span>
@@ -45,7 +45,7 @@
             </span>
 
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="eaf0f5" ph-img-text="000000" />
+                <img ph-img="120x90" ph-img-fill="eaf0f5" ph-img-text="000000" alt="light blue" />
                 <div class="img-polaroid swatch">
                     <span class="name">light blue</span>
                     <span class="html">#eaf0f5</span>
@@ -54,7 +54,7 @@
             </span>
 
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="f6f9fb" ph-img-text="000000" />
+                <img ph-img="120x90" ph-img-fill="f6f9fb" ph-img-text="000000" alt="lighter blue" />
                 <div class="img-polaroid swatch">
                     <span class="name">lighter blue</span>
                     <span class="html">#f6f9fb</span>
@@ -67,7 +67,7 @@
             <h4>CD Bund</h4>
 
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="E11A27" ph-img-text="ffffff" />
+                <img ph-img="120x90" ph-img-fill="E11A27" ph-img-text="ffffff" alt="official cd-bund red" />
                 <div class="img-polaroid swatch">
                     <span class="name">offical cd-bund</span>
                     <span class="html">#E11A27</span>
@@ -80,7 +80,7 @@
             <h4>Development Status</h4>
 
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="E11A27" ph-img-text="ffffff" />
+                <img ph-img="120x90" ph-img-fill="E11A27" ph-img-text="ffffff" alt="alpha status"/>
                 <div class="img-polaroid swatch">
                     <span class="name">alpha status</span>
                     <span class="html">#E11A27</span>
@@ -88,7 +88,7 @@
                 </div>
             </span>
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="FF7F00" ph-img-text="ffffff" />
+                <img ph-img="120x90" ph-img-fill="FF7F00" ph-img-text="ffffff" alt="beta status"/>
                 <div class="img-polaroid swatch">
                     <span class="name">beta status</span>
                     <span class="html">#FF7F00</span>
@@ -96,7 +96,7 @@
                 </div>
             </span>
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="008B45" ph-img-text="ffffff" />
+                <img ph-img="120x90" ph-img-fill="008B45" ph-img-text="ffffff" alt="release candidtaae"/>
                 <div class="img-polaroid swatch">
                     <span class="name">release candidate</span>
                     <span class="html">#008B45</span>
@@ -104,7 +104,7 @@
                 </div>
             </span>
             <span class="color">
-                <img ph-img="120x90" ph-img-fill="FFD700" ph-img-text="000000" />
+                <img ph-img="120x90" ph-img-fill="FFD700" ph-img-text="000000" alt="proof of concept"/>
                 <div class="img-polaroid swatch">
                     <span class="name">proof of concept</span>
                     <span class="html">#FFD700</span>
@@ -161,74 +161,6 @@
             <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
             <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
             <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
-        </div>
-
-        <h2 class="toc" id="form_elements">Forms</h2>
-        <h3 id="basic_form">Basic Form</h3>
-        <div highlight="this">
-<form role="form">
-    <input type="text" form-input form-label="testLabel"
-           form-helptext="testHelptext" name="testInput" id="testInput1" ng-model="searchCriteria.inputTest1"
-           i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
-
-    <textarea form-textarea form-label="testLabel"
-              form-helptext="testHelptext" form-textarea-large="true"></textarea>
-
-    <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox10"
-           ng-model="searchCriteria.checkboxTest10"/>
-
-    <input type="radio"form-label="testLabel" name="textRadio1" id="textRadio1_10"
-           ng-model="searchCriteria.radioTest10"/>
-    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio1_20"
-           ng-model="searchCriteria.radioTest10"/>
-</form>
-        </div>
-
-        <h3 id="horizontal_form">Horizontal Form</h3>
-        <div highlight="this">
-<form class="form-horizontal" role="form">
-    <input type="text" form-input form-label="testLabel" name="testInput" id="testInput2" ng-model="searchCriteria.inputTest1"
-           i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
-
-    <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
-
-    <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox2"
-           ng-model="searchCriteria.checkboxTest10"/>
-
-    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_10"
-           ng-model="searchCriteria.radioTest10"/>
-    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_20"
-           ng-model="searchCriteria.radioTest10"/>
-</form>
-        </div>
-
-        <h3 id="inline_form">Inline Form</h3>
-        <div highlight="this">
-<form class="form-inline" role="form">
-    <input type="text" form-input form-label="testLabel" name="testInput" id="testInput3" ng-model="searchCriteria.inputTest1"
-           i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
-
-    <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
-
-    <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox3"
-           ng-model="searchCriteria.checkboxTest10"/>
-
-    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_10"
-           ng-model="searchCriteria.radioTest10"/>
-    <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_20"
-           ng-model="searchCriteria.radioTest10"/>
-</form>
-        </div>
-
-        <h2 class="toc" id="buttons">Buttons</h2>
-        <div highlight="this">
-<button class="btn-primary">
-    Primary Button
-</button>
-
-<button>
-    Default Button
-</button>
         </div>
 
         <h2 class="toc" id="responsive">Responsive</h2>

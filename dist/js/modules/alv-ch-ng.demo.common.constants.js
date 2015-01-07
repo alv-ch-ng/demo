@@ -3,10 +3,10 @@
 
     var module = angular.module('alv-ch-ng.demo.common.constants', []);
 
-    module.constant('applicationVersion', 'v1.0.0 - demo site for github/alv-ch/alv-ch-ng');
+    module.constant('applicationVersion', 'alv-ch-ng v0.1.1 - Demo Application for alv-ch/alv-ch-ng');
     module.constant('applicationReleaseNote', 'poc');
     module.constant('apiServerBasePath', 'http://localhost:8080/api/');
-//    module.constant('apiServerBasePath', 'http://med-test5.tcsb.admin.ch:8080/api/');
+
     module.constant('supportedLanguages', ['de', 'en']);
     module.constant('defaultLanguage', 'de');
     module.constant('defaultPollingTime', 200000);

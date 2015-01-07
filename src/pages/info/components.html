@@ -27,8 +27,17 @@
 </button>
         </div>
 
-        <h3>Admin Glyphicons</h3>
+        <h3>Admin Symbols</h3>
         There are also the <a href="http://swiss.github.io/styleguide/base_layout_-_general.html#e-icons" target="_blank">Admin Icons</a> as CSS classes included.
+        <div highlight="this">
+            <span admin-symbol="calendar">
+                Calendar
+            </span>
+
+            <button admin-symbol="print" glyph-align="right">
+                Print
+            </button>
+        </div>
         <div class="bs-glyphicons">
         <ul class="bs-glyphicons-list">
             <li ng-repeat="adminIcon in adminIcons">
@@ -57,21 +66,85 @@
 </form>
         </div>
 
-        <h2 class="toc">Button groups</h2>
+        <h2 class="toc" id="buttons">Buttons</h2>
+        <div highlight="this">
+            <button class="btn-primary">
+                Primary Button
+            </button>
+
+            <button>
+                Default Button
+            </button>
+        </div>
+
+        <h3>Button groups</h3>
         <p class="info-notice">Under Construction</p>
 
-        <h2 class="toc">Form Input</h2>
-        <h3>Basic input</h3>
-        <p class="info-notice">Under Construction</p>
+        <h2 class="toc" id="form_elements">Forms</h2>
+        <h3 id="basic_form">Basic Form</h3>
+        <div highlight="this">
+            <form role="form">
+                <input type="text" form-input form-label="testLabel"
+                       form-helptext="testHelptext" name="testInput" id="testInput1" ng-model="searchCriteria.inputTest1"
+                       i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+    <textarea form-textarea form-label="testLabel"
+              form-helptext="testHelptext" form-textarea-large="true"></textarea>
+
+                <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox10"
+                       ng-model="searchCriteria.checkboxTest10"/>
+
+                <input type="radio"form-label="testLabel" name="textRadio1" id="textRadio1_10"
+                       ng-model="searchCriteria.radioTest10"/>
+                <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio1_20"
+                       ng-model="searchCriteria.radioTest10"/>
+            </form>
+        </div>
+
+        <h3 id="horizontal_form">Horizontal Form</h3>
+        <div highlight="this">
+            <form class="form-horizontal" role="form">
+                <input type="text" form-input form-label="testLabel" name="testInput" id="testInput2" ng-model="searchCriteria.inputTest1"
+                       i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+                <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
+
+                <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox2"
+                       ng-model="searchCriteria.checkboxTest10"/>
+
+                <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_10"
+                       ng-model="searchCriteria.radioTest10"/>
+                <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio2_20"
+                       ng-model="searchCriteria.radioTest10"/>
+            </form>
+        </div>
+
+        <h3 id="inline_form">Inline Form</h3>
+        <div highlight="this">
+            <form class="form-inline" role="form">
+                <input type="text" form-input form-label="testLabel" name="testInput" id="testInput3" ng-model="searchCriteria.inputTest1"
+                       i18n-attribute="placeholder" i18n-value="testPlaceholder"/>
+
+                <textarea form-textarea form-label="testLabel" form-textarea-large="true"></textarea>
+
+                <input type="checkbox" form-label="testLabel" name="textCheckbox1" id="textCheckbox3"
+                       ng-model="searchCriteria.checkboxTest10"/>
+
+                <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_10"
+                       ng-model="searchCriteria.radioTest10"/>
+                <input type="radio" form-label="testLabel" name="textRadio1" id="textRadio3_20"
+                       ng-model="searchCriteria.radioTest10"/>
+            </form>
+        </div>
 
         <h3>Input groups</h3>
         <div highlight="this">
 
-<input type="text" form-input form-label="testLabel" form-prepend="CHF" id="test102" ng-model="searchCriteria.placeholder100" />
+<input type="text" form-input form-label="testLabel" form-prepend="test-currency" id="test102" ng-model="searchCriteria.placeholder100" />
 
-<input type="text" form-input form-label="testLabel" form-append=".00" id="test101" ng-model="searchCriteria.placeholder100"  />
+<input type="text" form-input form-label="testLabel" form-append="test-double0" id="test101" ng-model="searchCriteria.placeholder100"  />
 
-<input type="text" form-input form-label="testLabel" form-prepend="CHF" form-append=".00" id="test100" ng-model="searchCriteria.placeholder100" />
+<input type="text" form-input form-label="testLabel" form-prepend="test-currency" form-append="test-double0" id="test100" ng-model="searchCriteria.placeholder100" />
 
 <input type="text" form-input form-label="testLabel" form-prepend="euro" form-prepend-icon="true" id="test103" ng-model="searchCriteria.placeholder100" />
 
@@ -87,17 +160,17 @@
 
 <hr />
 
-<input form-input form-append="map-marker" form-append-icon="true" form-append-btn="doLocation()" form-append-btn-submit="true" type="email" id="location" ng-model="location" placeholder="z.B. Ort, Gemeinde oder Kanton" />
-<input form-input form-inset="map-marker" type="email" id="location3" ng-model="location" placeholder="z.B. Ort, Gemeinde oder Kanton" /><br />
-<input form-input form-inset="map-marker" form-inset-action="doLocation()" type="email" id="location5" ng-model="location" placeholder="z.B. Ort, Gemeinde oder Kanton" /><br />
-<input form-input form-inset="map-marker" form-inset-action="doLocation()" form-inset-btn type="email" id="location7" ng-model="location" placeholder="z.B. Ort, Gemeinde oder Kanton" /><br />
-<input form-input form-inset="map-marker" form-inset-action="doLocation()" form-inset-btn="submit" type="email" id="location9" ng-model="location" placeholder="z.B. Ort, Gemeinde oder Kanton" /><br />
+<input form-input form-append="map-marker" form-append-icon="true" form-append-btn="doLocation()" form-append-btn-submit="true" type="email" id="location" ng-model="location" i18n-attribute="placeholder" i18n-value="testPlaceholder" /><br />
+<input form-input form-inset="map-marker" type="email" id="location3" ng-model="location" i18n-attribute="placeholder" i18n-value="testPlaceholder" /><br />
+<input form-input form-inset="map-marker" form-inset-action="doLocation()" type="email" id="location5" ng-model="location" i18n-attribute="placeholder" i18n-value="testPlaceholder" /><br />
+<input form-input form-inset="map-marker" form-inset-action="doLocation()" form-inset-btn type="email" id="location7" ng-model="location" i18n-attribute="placeholder" i18n-value="testPlaceholder" /><br />
+<input form-input form-inset="map-marker" form-inset-action="doLocation()" form-inset-btn="submit" type="email" id="location9" ng-model="location" i18n-attribute="placeholder" i18n-value="testPlaceholder" /><br />
         </div>
 
         <h2 class="toc">Navbars</h2>
         Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.
         <a href="http://getbootstrap.com/components/#navbar" target="_blank">For more Information or Exampmles see Bootstrap documentation</a>.
-        <h3 class="toc">Systembar</h3>
+        <h3 class="toc" id="navbar-systembar">Systembar</h3>
         Systembar are located on top of the Page.
         <div highlight="this">
 <div class="systembar">
