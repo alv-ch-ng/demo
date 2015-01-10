@@ -13,9 +13,9 @@
             // Metadata.
             pkg: grunt.file.readJSON('package.json'),
             banner: '/* ' +
-            '<%= pkg.title || pkg.name %> - <%= pkg.version %> - ' +
-            '<%= grunt.template.today('yyyy-mm-dd') %> - ' +
-            'Copyright (c) <%= grunt.template.today('yyyy') %> Informatik der Arbeitslosenversicherung; */\n',
+                '<%= pkg.title || pkg.name %> - <%= pkg.version %> - ' +
+                '<%= grunt.template.today("yyyy-mm-dd") %> - ' +
+                'Copyright (c) <%= grunt.template.today("yyyy") %> Informatik der Arbeitslosenversicherung; */\n',
 
             // Task configurations.
             clean: {
