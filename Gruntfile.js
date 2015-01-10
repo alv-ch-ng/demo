@@ -137,6 +137,9 @@
                 }
             },
             csslint: {
+                options: {
+                    csslintrc: '.csslintrc'
+                },
                 strict: {
                     options: {
                         import: 2
@@ -193,14 +196,14 @@
         });
 
         // CI
-        grunt.registerTask('travis', ['htmlhint', 'csslint', 'jshint', 'prepare']);
+        grunt.registerTask('travis', ['htmlhint', 'csslint', 'prepare']);
 
         // DEV
         grunt.registerTask('prepare', ['clean:demo','copy:demo','uglify']);
         grunt.registerTask('dev', ['browserSync','watch']);
 
         // Default task.
-        grunt.registerTask('default', ['clean','htmlhint', 'csslint', 'jshint','copy','cssbeautifier']);
+        grunt.registerTask('default', ['clean:dist','htmlhint', 'csslint', 'jshint','copy','cssbeautifier']);
     };
 
 
