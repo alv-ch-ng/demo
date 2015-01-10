@@ -8,8 +8,8 @@ deploy:
   provider: openshift
   user: mediamatik@seco.admin.ch
   password:
-    secure: NtdEnSE4k9EnqAe1xQad0Hg+ycMEzk6Gj9U6Znb0UH0t8X/EXHozxEOtoyxVwwffEd0fNOcBbwxvuzZzOL4atVFrUmIvUKgpa7P99IpKlV1XpTstcjn6O9KO0E2+0tvEKqXrAHY330SmsVzYYIW/i7YaVNKdQVFcl/2Y9nfIR5w=
-  app: ngdemo
+    secure: dC1fXoWSaiF8ossjbRHkCWfJtm/B44f0y48HjXoGj8jF+7TtQ42WsA1McKOC6ngx/EuO6fxp90OincdjGMzLX1Fh+yVEYn2IRiGP4i+ErK/SLuSnbz8y21t+sIsOFt6f8PvHbISNcON5eGDDRmecDFLyE5b1m66+oVMm7W4UxuE=
+  app: ng
   domain: alvch
   on:
     repo: tdascoli/alv-ch-ng.demo
