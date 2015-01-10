@@ -11,11 +11,11 @@
         grunt.initConfig({
 
             // Metadata.
-            pkg: grunt.file.readJSON("package.json"),
+            pkg: grunt.file.readJSON('package.json'),
             banner: '/* ' +
             '<%= pkg.title || pkg.name %> - <%= pkg.version %> - ' +
-            '<%= grunt.template.today("yyyy-mm-dd") %> - ' +
-            'Copyright (c) <%= grunt.template.today("yyyy") %> Informatik der Arbeitslosenversicherung; */\n',
+            '<%= grunt.template.today('yyyy-mm-dd') %> - ' +
+            'Copyright (c) <%= grunt.template.today('yyyy') %> Informatik der Arbeitslosenversicherung; */\n',
 
             // Task configurations.
             clean: {
@@ -168,15 +168,15 @@
             },
             watch: {
                 src: {
-                    files: "src/scripts/**/*.js",
+                    files: 'src/scripts/**/*.js',
                     tasks: ['jshint']
                 },
                 css: {
-                    'files': "src/styles/**/*.css",
+                    'files': 'src/styles/**/*.css',
                     'tasks': ['csslint']
                 },
                 html: {
-                    'files': "src/**/*.html",
+                    'files': 'src/**/*.html',
                     'tasks': ['htmlhint']
                 }
             },
