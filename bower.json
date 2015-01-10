@@ -25,12 +25,9 @@
     "angular-cookies": "latest",
     "angular-sanitize": "latest",
     "autofill-event": "latest",
-    "bootstrapaccessibilityplugin": "latest",
-    "jquery-i18n-property": "git://github.com/alv-ch/jquery-i18n-properties.git",
     "angular-bootstrap": "latest",
     "angular-mocks": "latest",
     "restangular": "~1.4.0",
-    "track.js": "latest",
     "ng-dev": "latest",
     "octicons": "*"
   },

@@ -7,17 +7,12 @@
     <title i18n-msg="common.site.title"></title>
 
     <!-- track.js -->
-    <script type="text/javascript" src="lib/tracker.js" data-token="5f7df97895b74d18a2a4bc6cffc78712"></script>
-    <script>
-        window._trackJs = {
-            token: "5f7df97895b74d18a2a4bc6cffc78712",
-            application: "ngdemo"
-        }
-    </script>
+    <script type="text/javascript" src="//d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js" data-token="5f7df97895b74d18a2a4bc6cffc78712"></script>
+    <!-- /track.js -->
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
-    <!--/.webfontloader -->
+    <!-- webfontloader -->
     <script>
         WebFontConfig = {
             custom: {
@@ -35,26 +30,36 @@
             s.parentNode.insertBefore(wf, s);
         })();
     </script>
+    <!-- /webfontloader -->
 
-    <!-- build:css css/style.min.css -->
+    <!-- styles -->
     <link rel="stylesheet" type="text/css" href="lib/admin-symbols.css"/>
     <link rel="stylesheet" type="text/css" href="lib/alv-ch-bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-accessibility.css"/>
     <link rel="stylesheet" type="text/css" href="lib/frutiger.css"/>
-    <link rel="stylesheet" type="text/css" href="css/alv-ch-ng.demo.css"/>
     <link rel="stylesheet" type="text/css" href="lib/github.css"/>
-    <!-- /build -->
     <link rel="stylesheet" type="text/css" href="lib/octicons/octicons.css"/>
-    <!-- build:js js/application-public.min.js -->
+    <link rel="stylesheet" type="text/css" href="styles/alv-ch-ng.demo.css"/>
+    <!-- /style -->
+    <!-- scripts -->
     <script src="lib/lib.min.js"></script>
+
+    <script src="js/alv-ch-ng.common.min.js"></script>
+    <script src="ng/alv-ch-ng.i18n.js"></script>
+    <script src="ng/alv-ch-ng.security.min.js"></script>
+    <script src="ng/alv-ch-ng.ui-core.min.js"></script>
+    <script src="ng/alv-ch-ng.ui-forms.min.js"></script>
+    <script src="ng/alv-ch-ng.ui-navigation.min.js"></script>
+    <script src="ng/alv-ch-ng.ui-scroll.min.js"></script>
+
     <script src="conf/alv-ch-ng.demo.common.config.js"></script>
-    <script src="js/modules/alv-ch-ng.demo.common.i18n.js"></script>
-    <script src="js/modules/alv-ch-ng.demo.common.messages.js"></script>
-    <script src="js/modules/alv-ch-ng.demo.common.resource.js"></script>
-    <script src="js/modules/alv-ch-ng.demo.common.ui.js"></script>
-    <script src="js/modules/alv-ch-ng.demo.common.constants.js"></script>
-    <script src="js/alv-ch-ng.demo.public.js"></script>
-    <!-- /build -->
+    <script src="scripts/modules/alv-ch-ng.demo.common.i18n.js"></script>
+    <script src="scripts/modules/alv-ch-ng.demo.common.messages.js"></script>
+    <script src="scripts/modules/alv-ch-ng.demo.common.resource.js"></script>
+    <script src="scripts/modules/alv-ch-ng.demo.common.ui.js"></script>
+    <script src="scripts/modules/alv-ch-ng.demo.common.constants.js"></script>
+    <script src="scripts/alv-ch-ng.demo.public.js"></script>
+    <!-- /scripts -->
 </head>
 <body>
 <div id="systembar" class="systembar" scroll-fix>
