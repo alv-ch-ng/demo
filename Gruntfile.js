@@ -141,7 +141,7 @@
                     options: {
                         import: 2
                     },
-                    src: ['dev/css/**/*.css', '!dev/css/themes/**/*.css']
+                    src: ['src/styles/*.css']
                 }
             },
             htmlhint: {
@@ -149,7 +149,7 @@
                     htmlhintrc: '.htmlhintrc'
                 },
                 html: {
-                    src: ['dev/**/*.html']
+                    src: ['src/**/*.html']
                 }
             },
             jshint: {
@@ -163,7 +163,7 @@
                     options: {
                         jshintrc: '.jshintrc'
                     },
-                    src: ['src/**/*.js']
+                    src: ['src/scripts/*.js']
                 }
             },
             watch: {
@@ -193,7 +193,7 @@
         });
 
         // CI
-        grunt.registerTask('travis', ['htmlhint', 'csslint', 'jshint', 'clean']);
+        grunt.registerTask('travis', ['htmlhint', 'csslint', 'jshint', 'prepare']);
 
         // DEV
         grunt.registerTask('prepare', ['clean:demo','copy:demo','uglify']);
