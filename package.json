@@ -14,9 +14,10 @@
   },
   "scripts": {
     "test": "grunt travis --verbose",
-    "start": "node ./bin/www",
+    "start": "node server.js",
     "postinstall": "export HOME=$HOME/app-root/runtime/repo; ./node_modules/bower/bin/bower install; grunt"
   },
+  "main": "server.js",
   "dependencies": {
     "grunt": "*",
     "grunt-cli": "^0.1.13",
