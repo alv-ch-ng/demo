@@ -5,5 +5,4 @@ components/**/*
 **/fonts/**/*
 src/lib/**/*
 node_modules/**/*
-server.js
 

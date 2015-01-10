@@ -196,7 +196,7 @@
         });
 
         // CI
-        grunt.registerTask('travis', ['htmlhint', 'csslint', 'prepare']);
+        grunt.registerTask('travis', ['htmlhint', 'csslint', 'prepare', 'clean:dist']);
 
         // DEV
         grunt.registerTask('prepare', ['clean:demo','copy:demo','uglify']);

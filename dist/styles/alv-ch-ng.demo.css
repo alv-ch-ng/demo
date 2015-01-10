@@ -31,7 +31,7 @@
     background-color: #f7f7f9;
     border-width: 1px;
     border-color: #ddd;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0 0 4px 4px;
     box-shadow: none;
     font-size: 12px;
 }
@@ -131,15 +131,15 @@ span.color img {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: none;
 }
-div.swatch {
+.swatch {
     border-top: none;
     width: 122px;
 }
-div.swatch span {
+.swatch span {
     font-size: 0.75em;
     display: block;
 }
-div.swatch span.name {
+.swatch .name {
     font-weight: bold;
 }
 .clear {
