@@ -1,6 +1,6 @@
 {
   "name": "alv-ch-ng.demo",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "ignore": [
     ".idea",
     "lib",
@@ -20,25 +20,36 @@
     "tests"
   ],
   "dependencies": {
+    "angular-translate": "2.6.0",
+    "angular-bootstrap-tour": "latest",
+    "bootstrap": "v3.3.1",
+    "bootstrapaccessibilityplugin": "v1.0.4",
+    "jquery": "2.1.1",
+    "ng-lodash": "latest",
+    "alv-ch-ng.core": "latest",
+    "alv-ch-ng.style": "latest",
+    "alv-ch-ng.forms": "latest",
+    "alv-ch-ng.scroll": "latest",
+    "alv-ch-ng.selectpicker": "latest",
+    "alv-ch-ng.text-truncate": "latest",
     "angular": "latest",
-    "angular-route": "latest",
-    "angular-cookies": "latest",
-    "angular-sanitize": "latest",
-    "autofill-event": "latest",
-    "angular-bootstrap": "latest",
+    "angular-resource": "latest",
     "angular-mocks": "latest",
-    "restangular": "~1.4.0",
-    "ng-dev": "latest",
-    "octicons": "*"
-  },
-  "devDependencies": {
-    "alv-ch-ng": "latest"
+    "angular-route": "latest",
+    "angular-aria": "latest",
+    "angular-translate-storage-local": "latest",
+    "angular-translate-storage-cookie": "latest",
+    "angular-translate-loader-static-files": "latest",
+    "jasmine": "2.1.3",
+    "ng-dev":"latest"
   },
   "resolutions": {
     "jquery": "~2.1.1",
-    "angular": "~1.3.0"
+    "angular": "~1.3.0",
+    "bootstrap": "v3.3.1",
+    "angular-translate": "2.6.0"
   },
-  "homepage": "https://github.com/tdascoli/alv-ch-ng.demo",
+  "homepage": "https://github.com/alv-ch-ng/demo",
   "authors": [
     "Thomas D'Ascoli <thomas@dasco.li>"
   ],

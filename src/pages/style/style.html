@@ -1,0 +1,50 @@
+<div class="page-header">
+    <h1>Core
+        <small>Reusable components built to ease the hassle of not knowing the right stylesheets.</small>
+    </h1>
+</div>
+
+<div scroll-spy>
+    <div class="sidebar collapse navbar-collapse">
+        <div id="toc-container" scroll-fix="alv-divider" scroll-fix-bottom="footer-container" role="navigation">
+            <toc id="toc" selector=".toc"></toc>
+        </div>
+    </div>
+    <div class="content">
+
+        <h2 class="toc">Glyphicons</h2>
+
+        <h3>Basic Directive</h3>
+        You can use the Standard <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">Bootstrap Glyphicons</a> as follows.
+        <div highlight="this">
+<button>
+    <glyph icon="star"/>
+    Star
+</button>
+
+<button glyph-icon="search" glyph-align="right">
+    Search
+</button>
+        </div>
+
+        <h3>Admin Symbols</h3>
+        There are also the <a href="http://swiss.github.io/styleguide/base_layout_-_general.html#e-icons" target="_blank">Admin Icons</a> as CSS classes included.
+        <div highlight="this">
+<span glyph-icon="calendar" admin-symbol>
+    Calendar
+</span>
+
+<button glyph-icon="print" admin-symbol glyph-align="right">
+    Print
+</button>
+        </div>
+        <div class="bs-glyphicons">
+            <ul class="bs-glyphicons-list">
+                <li ng-repeat="adminIcon in adminIcons">
+                    <span class="adminIcons icon icon--{{adminIcon}}" aria-hidden="true"></span>
+                    <span class="glyphicon-class">.icon .icon--{{adminIcon}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

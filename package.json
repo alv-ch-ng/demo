@@ -1,12 +1,12 @@
 {
   "name": "alv-ch-ng.demo",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Demo Site alv-ch-ng.",
   "author": "ALV-CH",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tdascoli/alv-ch-ng.demo"
+    "url": "https://github.com/alv-ch-ng/demo"
   },
   "engines": {
     "node": ">= 0.10.0",
@@ -14,38 +14,31 @@
   },
   "scripts": {
     "test": "grunt travis --verbose",
-    "start": "node server.js",
-    "postinstall": "export HOME=$HOME/app-root/runtime/repo; ./node_modules/bower/bin/bower install; grunt"
+    "start": "node server.js"
   },
-  "main": "server.js",
+  "main":"server.js",
   "dependencies": {
-    "grunt": "*",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-concat-css": "*",
+    "grunt-contrib-connect": "*",
     "grunt-contrib-copy": "*",
-    "grunt-processhtml": "*"
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-cssbeautifier":"*",
+    "grunt-browser-sync": "*",
+    "grunt-exec": "*",
+    "bower": "*",
+    "express": "^4.9.0"
   },
   "devDependencies": {
-    "angular": "latest",
-    "angular-route": "latest",
     "load-grunt-tasks": "*",
     "time-grunt": "*",
-    "bower": "*",
     "colors": "*",
-    "express": "^4.9.0",
-    "karma": "*",
     "phantomjs": "*",
-    "jshint": "*",
     "travis": "*",
-    "body-parser": "*",
-    "method-override": "*",
-    "browser-sync": "^1.8.3",
-    "grunt-contrib-csslint": "*",
-    "grunt-htmlhint": "*",
-    "grunt-cssbeautifier":"*",
-    "grunt-contrib-jshint": "*",
-    "grunt-browser-sync": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-uglify": "*"
+    "browser-sync": "^1.8.3"
   }
 }
