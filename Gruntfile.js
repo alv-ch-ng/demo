@@ -180,7 +180,7 @@
         grunt.registerTask('dev', ['prepare','browserSync','watch']);
 
         // Default task.
-        grunt.registerTask('default', ['prepare']);
+        grunt.registerTask('default', ['prepare','copy:dist']);
     };
 
 
