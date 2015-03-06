@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "grunt travis --verbose",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "export HOME=$HOME/app-root/runtime/repo"
   },
   "main":"server.js",
   "dependencies": {
