@@ -8,7 +8,7 @@ deploy:
   provider: openshift
   user: mediamatik@seco.admin.ch
   password:
-    secure: OQ6zrlR+o8Ph3O16n8djb/mL6zXb1du6W5VizjE1cgcPcPykZoNloXEccqDfFAz0FLh9tCWQuvZfOd+4GXBOL7uVzdb7aQnAHfkItdOewFp1JfPZ73gX1KI7dX7okLWGi1uLgGXEzYeZNwMktvNheg5h2JJSwiErqjjAwX+0Q9E=
+    secure: DF8beu6ZtmB6Z/xIAcwZ7jQCnopy7JX9SsoE/ljwDFm5bGSqW6gDFQ150sk3yBYyj5JCDON9EvBbSu5BxJKucjmX+HeQCATOwXGdTJcRSOTuC8IWEwN//RIrM3iKOeo32LUJSZbturjq+bllsR917SMsUsP++P77ehupXJzMfg4=
   app: ng
   domain: alvchegov
   on:
